@@ -1,0 +1,36 @@
+#ground{
+    position: absolute;
+    width: 1000px;
+    height: 400px;
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+    background-color: blue;
+    margin-left: 300px;
+    margin-top: 500px;
+}
+
+#left-wall{
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    clip-path: polygon(0 30%, 100% 0%, 100% 70%, 0 100%);
+    background-color: rgb(255, 174, 0);
+    margin-left: 300px;
+    margin-top: 100px;
+    
+}
+
+#right-wall {
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    border-left: rgba(0, 0, 0, 0.153) solid 1px;
+    clip-path: polygon(0 0, 0 100%, 25% 100%, 25% 34%, 75% 50%, 75% 75%, 25% 58%, 25% 100%, 100% 100%, 100% 30%);
+    background-color: rgb(255, 174, 0);
+    margin-left: 800px;
+    margin-top: 100px;
+    overflow: hidden;
+
+}
+
+
+/* polygon(0 0, 100% 30%, 100% 100%, 0 70%); */

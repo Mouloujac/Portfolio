@@ -1,0 +1,10 @@
+.transparent-window {
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 70%);
+    background-color: red;
+    mix-blend-mode: difference;
+    border: solid black 10px;
+    border: 2px solid black; /* Ajoutez une bordure pour visualiser la fenêtre */
+}
