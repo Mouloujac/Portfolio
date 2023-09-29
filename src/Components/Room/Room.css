@@ -1,36 +1,101 @@
 #ground{
     position: absolute;
-    width: 1000px;
+    width: 994px;
     height: 400px;
     clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
-    background-color: blue;
+    background-color: rgb(156, 148, 127);
+    margin-left: 304px;
+    margin-top: 502px;
+}
+#ground-shadow{
+    position: absolute;
+    width: 1001px;
+    height: 400px;
+    clip-path: polygon(0% 50%, 50% 100%, 100% 50%, 100% 37%, 0% 37%);
+    background-color: rgb(20, 20, 20);
     margin-left: 300px;
-    margin-top: 500px;
+    margin-top: 550px;
+    z-index: -1;
 }
 
 #left-wall{
     position: absolute;
-    width: 500px;
+    width: 497px;
     height: 600px;
     clip-path: polygon(0 30%, 100% 0%, 100% 70%, 0 100%);
     background-color: rgb(255, 174, 0);
+    margin-left: 304px;
+    margin-top: 102px;
+    
+}
+
+#left-wall-shadow{
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    clip-path: polygon(0 30%, 100% 0%, 100% 70%, 0 100%);
+    background-color: rgb(5, 5, 5);
     margin-left: 300px;
     margin-top: 100px;
+    z-index: -1;
     
 }
 
 #right-wall {
     position: absolute;
-    width: 500px;
+    width: 497px;
     height: 600px;
     border-left: rgba(0, 0, 0, 0.153) solid 1px;
     clip-path: polygon(0 0, 0 100%, 25% 100%, 25% 34%, 75% 50%, 75% 75%, 25% 58%, 25% 100%, 100% 100%, 100% 30%);
     background-color: rgb(255, 174, 0);
     margin-left: 800px;
-    margin-top: 100px;
+    margin-top: 102px;
     overflow: hidden;
 
 }
 
+#right-wall-shadow {
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    border-left: rgba(0, 0, 0, 0.153) solid 1px;
+    clip-path: polygon(0 0, 0 100%, 25% 100%, 25% 34%, 75% 50%, 75% 75%, 25% 58%, 25% 100%, 100% 100%, 100% 30%);
+    background-color: rgb(0, 0, 0);
+    margin-left: 800px;
+    margin-top: 100px;
+    overflow: hidden;
+    z-index: -1;
 
-/* polygon(0 0, 100% 30%, 100% 100%, 0 70%); */
+}
+
+.window-middle{
+    position: absolute;
+    width: 140px;
+    height: 216px;
+    clip-path: polygon(25% 0, 47% 6%, 47% 100%, 25% 94%);
+    left: 994px;
+    top: 314px;
+    background-color: brown;
+    z-index: 0;
+
+}
+
+.middle-line{
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: black;
+    left: 49px;
+}
+
+
+.handle{
+    position: absolute;
+    width: 50px;
+    height: 80px;
+    border-radius: 5px;
+    clip-path: polygon(55% 23%, 40% 19%, 40% 63%, 48% 65%, 48% 32%, 55% 34%);
+    background-color: black;
+    left: 32px;
+    top: 105px;
+}

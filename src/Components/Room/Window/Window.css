@@ -1,10 +1,44 @@
-.transparent-window {
+.window {
     position: absolute;
-    width: 500px;
-    height: 600px;
-    clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 70%);
-    background-color: red;
-    mix-blend-mode: difference;
-    border: solid black 10px;
-    border: 2px solid black; /* Ajoutez une bordure pour visualiser la fenêtre */
+    width: 296px;
+    height: 374px;
+    clip-path: polygon(0 0, 100% 32%, 100% 87%, 0 54%);
+    background-color: brown;
+    top: 161px;
+    left: 102px;
+    z-index: 2;
+
 }
+
+.window-shadow{
+    position: absolute;
+    width: 298px;
+    height: 378px;
+    clip-path: polygon(0% 3%, 2% 3%, 100% 34%, 100% 88%, 99% 89%, 0 54%);
+    background-color: black;
+    top: 150px;
+    left: 103px;
+    
+}
+
+.shadow-line-right{
+    position: absolute;
+    width: 2px;
+    height: 48px;
+    background-color: black;
+    left:134px;
+    top: 83px;
+    z-index: 1000;
+}
+
+.shadow-line-left{
+    position: absolute;
+    width: 2px;
+    height: 148px;
+    background-color: black;
+    left: -84px;
+    top: 43px;
+    z-index: 999;
+}
+
+
