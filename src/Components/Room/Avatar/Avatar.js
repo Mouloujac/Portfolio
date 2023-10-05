@@ -3,7 +3,7 @@ import "./Avatar.css"
 
 function Avatar (){
     return (
-        <>
+        <div className='avatar'>
             <div className='body'></div>
             <div className='right-arm-up'></div>
             <div className='right-arm-up-shadow'></div>
@@ -14,7 +14,7 @@ function Avatar (){
             <div className='right-leg'></div>
             <div className='right-leg-shadow'></div>
             <div className='left-leg'></div>
-        </>
+        </div>
     );
 }
 

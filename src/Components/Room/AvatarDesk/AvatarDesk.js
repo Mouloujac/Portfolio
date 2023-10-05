@@ -18,8 +18,17 @@ function AvatarDesk (){
                 <div className='right-shirt'></div>
                 <div className='right-arm'></div>
                 <div className='right-hand'></div>
-                <div className="left-leg-desk"></div>
-                <div className="right-leg-desk"></div>
+                <div className='left-leg-desk'></div>
+                <div className='left-foot'></div>
+                <div className='right-leg-desk'></div>
+                <div className='right-foot'></div>
+                <div className="chair">
+                    <div className="chair-sit"></div>
+                    <div className="chair-sit-right"></div>
+                    <div className="chair-foot"></div>
+                    <div className="chair-foot-round"></div>
+                    <div className="chair-base"></div>
+                </div>
             </div>
             
        
