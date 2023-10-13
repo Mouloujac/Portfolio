@@ -13,6 +13,7 @@ function Screen (){
                             <div className='screen-left-interior'></div>
                         </div>
                     </div>
+                    <div className='screen-foot-left'></div>
                 </div>
                 <div className='screen-right'>
                     <div className='screen-right-back'>
@@ -22,6 +23,7 @@ function Screen (){
                             <div className='screen-right-interior'></div>
                         </div>
                     </div>
+                    <div className='screen-foot-right'></div>
                 </div>
             </div>    
         </>

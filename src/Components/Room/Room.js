@@ -2,12 +2,14 @@ import React from 'react'
 import "./Room.css"
 import Window from './Window/Window'
 import Desk from './Desk/Desk';
-import Avatar from './Avatar/Avatar'
+import Avatar from './AvatarDesk/AvatarDesk'
+import Parquet from './Parquet/Parquet';
+import Screen from './Screen/Screen';
 
 function Room (){
     return (
         <>
-            <div className='Room'>
+            <div className='room'>
                 <div id="left-wall">
                 </div>
                 <div id="left-wall-shadow">
@@ -26,11 +28,14 @@ function Room (){
                 </div>
                 <div id="right-wall-shadow">
                 </div>
+                <Avatar />
+                <Desk />
+                <Screen />
                 <div id="ground"> 
+                    <Parquet />
                 </div>
                 <div id="ground-shadow">
                 </div> 
-                <Desk />
             </div>
             
         </>

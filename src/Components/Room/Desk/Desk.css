@@ -1,5 +1,15 @@
+.desk{
+    
+    margin-top: 330px;
+    margin-left:315px;
+    width: 269px;
+    height: 179px;
+    
+    position: absolute;
+}
+
 .desk-base {
-    background-color: rgb(7, 7, 7);
+    background-color: hsl(30, 37%, 33%);
     position: absolute;
     width: 270px;
     height: 270px;
@@ -10,7 +20,7 @@
 }
 
 .desk-top {
-    background-color: rgb(245, 243, 243);
+    background-color: hsl(30, 34%, 52%);
     position: absolute;
     width: 270px;
     height: 270px;
@@ -28,8 +38,8 @@
     width: 10px;
     height: 68px;
     clip-path: polygon(19% 100%, 0 0, 100% 0, 81% 100%);
-    background-color: rgb(199, 199, 199);
-    z-index: 0;
+    background-color: hsl(30, 34%, 52%);
+    z-index: 1;
 
 }
 .corner-2{
@@ -39,8 +49,8 @@
     width: 10px;
     height: 68px;
     clip-path: polygon(19% 100%, 0 0, 100% 0, 81% 100%);
-    background-color: rgb(199, 199, 199);
-    z-index: 0;
+    background-color: hsl(30, 34%, 52%);
+    z-index: 1;
 
 }
 .corner-3{
@@ -50,8 +60,8 @@
     width: 10px;
     height: 68px;
     clip-path: polygon(19% 100%, 0 0, 100% 0, 81% 100%);
-    background-color: rgb(199, 199, 199);
-    z-index: 0;
+    background-color: hsl(30, 34%, 52%);
+    z-index: 1;
 
 }
 .corner-4{
@@ -61,8 +71,8 @@
     width: 10px;
     height: 68px;
     clip-path: polygon(19% 100%, 0 0, 100% 0, 81% 100%);
-    background-color: rgb(199, 199, 199);
-    z-index: 0;
+    background-color: hsl(30, 34%, 52%);
+    z-index: 1;
 
 } 
 

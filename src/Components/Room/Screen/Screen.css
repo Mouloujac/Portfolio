@@ -1,5 +1,8 @@
 .screen{
-position: absolute;
+    position: absolute;
+    margin-top: 170px;
+    margin-left: 335px;
+    
 }
 
 .screen-left{
@@ -38,6 +41,30 @@ position: absolute;
     margin-top: 20px;
     z-index: 5;
 }
+
+/* .screen-foot-left{
+    margin-top: 135px;
+    margin-left: 18px;
+    rotate: -23deg;
+    clip-path: ellipse(50% 34% at 50% 50%);
+    background-color: rgb(28, 23, 33);
+    position: absolute;
+    width: 50px;
+    height: 40px;
+    z-index: 3; 
+}
+
+.screen-foot-right{
+    margin-top: 165px;
+    margin-left: 20px;
+    rotate: -7deg;
+    clip-path: ellipse(50% 34% at 50% 50%);
+    background-color: rgb(28, 23, 33);
+    position: absolute;
+    width: 50px;
+    height: 40px;
+    z-index: 3; 
+} */
 
 
 .screen-right{

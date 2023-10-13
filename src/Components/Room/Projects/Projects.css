@@ -1,0 +1,168 @@
+/* TABLEAU */
+
+.projects{
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 160px;
+}
+
+.projects-board{
+    background-color: hsl(30,69%,78%);
+    width: 220px;
+    height: 290px;
+    clip-path: polygon(0 30%, 100% 0%, 100% 70%, 0 100%);
+    margin-left: 5px;
+    margin-top: 3px;
+    position: absolute;
+    z-index: 3;
+}
+
+.projects-board-ext{
+    background-color: hsl(30, 55%, 73%);
+    width: 224px;
+    height: 292px;
+    clip-path: polygon(0 29%, 97% 0%, 100% 1%, 96% 70%,  2% 100%, 0 99%);
+    margin-left: 0px;
+    margin-top: 0px;
+    position: absolute;
+    z-index: 2;
+}
+
+.projects-board-int{
+    background-color: rgb(192,145,103);
+    width: 206px;
+    height: 270px;
+    clip-path: polygon(0 30%, 100% 0%, 100% 70%, 0 100%);
+    margin-left: 11px;
+    margin-top: 12px;
+    position: absolute;
+    z-index: 3;
+}
+
+.shadow-down{
+    background-color: hsl(30, 43%, 65%);
+    width: 222px;
+    height: 3px;
+    rotate: -21.5deg;
+    margin-left: 3px;
+    margin-top: 239px;
+    position: absolute;
+    z-index: 3;
+}
+
+.shadow-right{
+    background-color: hsl(30, 43%, 65%);
+    width: 3px;
+    height: 186px;
+    margin-left: 215px;
+    margin-top: 14px;
+    position: absolute;
+    z-index:3;
+}
+
+.shadow-up{
+    background-color: hsl(30, 43%, 65%);
+    width: 222px;
+    height: 1px;
+    rotate: -21.5deg;
+    margin-left: 3px;
+    margin-top: 53px;
+    position: absolute;
+    z-index: 3;
+}
+
+.shadow-left{
+    background-color: hsl(30, 43%, 65%);
+    width: 1px;
+    height: 188px;
+    margin-left: 10px;
+    margin-top: 94px;
+    position: absolute;
+    z-index: 3;
+}
+
+
+
+
+/* POLAROID */
+
+.polaroid{
+    background-color: aliceblue;
+    width: 50px;
+    height: 50px;
+    margin-top: 150px;
+    margin-left: 170px;
+    position: absolute;
+    z-index: 9;
+    clip-path: polygon(0 28%, 56% 8%, 55% 79%, 0% 100%);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.photo{
+    background-color: rgb(33, 34, 35);
+    width: 52px;
+    height: 52px;
+    margin-top: 2px;
+    margin-left: 2px;
+    position: absolute;
+    z-index: 7;
+    clip-path: polygon(0 28%, 47% 12%, 46% 60%, 0 77%);
+    transition: background-color 0.3s;
+}
+
+/* .scotch{
+    background-color: rgba(152, 162, 172, 0.644);
+    width: 72px;
+    height: 72px;
+    
+    position: absolute;
+    z-index: 2;
+    clip-path: polygon(64% 86%, 63% 84%, 61% 84%, 61% 84%, 59% 84%, 60% 83%, 78% 61%, 78% 61%, 78% 63%, 79% 63%, 81% 62%, 80% 63%, 80% 64%, 80% 65%, 82% 65%, 84% 65%, 65% 86%);
+}
+
+.up{
+    margin-top: 112px;
+    margin-left: 120px;  
+}
+
+.down{
+    margin-top: 136px;
+    margin-left: 146px;  
+} */
+
+.close {
+	overflow: hidden;
+	position: relative;
+	border: none;
+	padding: 0;
+	width: 2em; height: 2em;
+	border-radius: 50%;
+	background: transparent;
+	color: #1da1f2;
+	font: inherit;
+	text-indent: 100%;
+	cursor: pointer;
+    transition: all 0.8s;
+}
+
+.close:focus {
+    outline: solid 0 transparent;
+    box-shadow: 0 0 0 2px #8ed0f9
+}
+
+.close:hover {
+    background: rgba(29, 161, 142, .1)
+}
+
+.close:before, .close:after {
+    position: absolute;
+    top: 15%; left: calc(50% - .0625em);
+    width: .125em; height: 70%;
+    border-radius: .125em;
+    transform: rotate(45deg);
+    background: currentcolor;
+    content: ''
+}
+
+.close:after { transform: rotate(-45deg); }
