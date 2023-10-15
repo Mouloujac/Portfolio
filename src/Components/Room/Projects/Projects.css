@@ -2,8 +2,8 @@
 
 .projects{
     position: absolute;
-    margin-top: 150px;
-    margin-left: 160px;
+    margin-top: 160px;
+    margin-left: 40px;
 }
 
 .projects-board{
@@ -93,10 +93,24 @@
     margin-top: 150px;
     margin-left: 170px;
     position: absolute;
-    z-index: 9;
+    z-index: 12;
+    transition: all 0.3s ease; 
     clip-path: polygon(0 28%, 56% 8%, 55% 79%, 0% 100%);
     cursor: pointer;
-    transition: all 0.3s;
+           
+}
+
+.polaroid-expanded{
+    background-color: aliceblue;
+    width: 500px;
+    height: 600px;
+    margin-top: -50px;
+    margin-left: 210px;
+    position: absolute;
+    z-index: 12;
+    cursor: default;
+    transition: all 0.3s ease;  
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .photo{
@@ -107,8 +121,20 @@
     margin-left: 2px;
     position: absolute;
     z-index: 7;
+    transition: all 0.1s ease;  
     clip-path: polygon(0 28%, 47% 12%, 46% 60%, 0 77%);
-    transition: background-color 0.3s;
+    
+}
+
+.photo-expanded{
+    background-color: rgb(33, 34, 35);
+    width: 450px;
+    height: 300px;
+    margin-top: 20px;
+    margin-left: 24px;
+    position: absolute;
+    z-index: 7;
+    transition: all 0.3s ease;
 }
 
 /* .scotch{
@@ -133,12 +159,14 @@
 
 .close {
 	overflow: hidden;
-	position: relative;
+	position: absolute;
 	border: none;
 	padding: 0;
-	width: 2em; height: 2em;
+    left: 228px;
+    top: -55px;
+	width: 3em; height: 3em;
 	border-radius: 50%;
-	background: transparent;
+	background: white;
 	color: #1da1f2;
 	font: inherit;
 	text-indent: 100%;
@@ -166,3 +194,32 @@
 }
 
 .close:after { transform: rotate(-45deg); }
+
+
+.polaroid-text{
+    width: 500px;
+    height: 280px;
+    margin-top: 320px;
+    transition-property: font-size;
+    transition-duration: 1s;
+    transition-delay: 0.3s ;
+}
+
+
+
+
+
+
+
+.polaroid-text .technos{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 520px;
+    background-color: aliceblue;
+    padding: 1rem;
+    border-radius: 10%;
+   
+}

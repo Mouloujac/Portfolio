@@ -1,8 +1,29 @@
 .App {
   text-align: center;
-  height: 100vh;
   z-index: -999;
   overflow-x: hidden;
+  
 }
 
+.title{
+  padding-top: 2rem;
+  padding: 1rem;
+  
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
 
+.icons{
+  width: 70px;
+}
+
+.resume{
+  font-size: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: start;
+}
+
+.link{
+  text-align: end;
+}

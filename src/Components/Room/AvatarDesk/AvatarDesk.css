@@ -58,12 +58,35 @@
 
 }
 
+.hat{
+    clip-path: polygon(15% 29%, 16% 25%, 19% 23%, 22% 20%, 24% 17%, 29% 15%, 33% 12%, 39% 10%, 44% 9%, 49% 9%, 54% 9%, 59% 10%, 64% 12%, 69% 14%, 74% 17%, 79% 21%, 82% 25%, 85% 29%, 87% 33%, 89% 38%, 90% 42%, 91% 46%, 88% 51%, 84% 52%, 78% 53%, 70% 51%, 61% 49%, 52% 47%, 44% 44%, 38% 43%, 32% 40%, 26% 37%, 19% 34%);
+    margin-left: 140px;
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: rgb(71, 71, 165);
+    z-index: 9;
+}
+
+.hat-back{
+    clip-path: ellipse(40% 9% at 50% 50%);
+    margin-left: 165px;
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: rgb(32, 32, 106);
+    z-index: 9;
+    rotate: 15deg;
+}
+
 .music-head{
     top: 20px;
     left: 133px;
     background-color: rgb(0, 0, 0);
     transform: rotate(15deg);
-    z-index: 9;
+    z-index: 10;
     width: 120px;
     height: 120px;
     position: absolute;
@@ -87,7 +110,7 @@
     left: 155px;
     background-color: rgb(0, 0, 0);
     transform: rotate(15deg);
-    z-index: 9;
+    z-index: 10;
     width: 40px;
     height: 40px;
     clip-path: circle(50% at 50% 50%);

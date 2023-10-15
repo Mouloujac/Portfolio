@@ -6,6 +6,8 @@ function AvatarDesk (){
        
             <div className='avatar-desk'>
                 <div className='head'></div>
+                <div className="hat"></div>
+                <div className="hat-back"></div>
                 <div className='music-head'></div>
                 <div className='music-ears'></div>
                 <div className='music-ears-center'></div>

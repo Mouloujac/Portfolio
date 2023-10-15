@@ -15,6 +15,10 @@ function Screen (){
                     </div>
                     <div className='screen-foot-left'></div>
                 </div>
+                <div className='screen-foot'></div>
+                <div className='screen-foot-shadow'></div>
+                <div className='wave'></div>
+
                 <div className='screen-right'>
                     <div className='screen-right-back'>
                     </div>
