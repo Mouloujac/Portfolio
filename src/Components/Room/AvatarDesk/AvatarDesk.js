@@ -10,7 +10,9 @@ function AvatarDesk (){
                 <div className="hat-back"></div>
                 <div className='music-head'></div>
                 <div className='music-ears'></div>
-                <div className='music-ears-center'></div>
+                <div className='music-ears-center'>
+                    <img src='react.svg' id="reactLogo"></img>
+                </div>
                 <div className='hat'></div>
                 <div className='hat-front-line'></div>                
                 <div className='body-desk'></div>

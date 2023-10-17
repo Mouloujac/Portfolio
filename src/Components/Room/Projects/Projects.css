@@ -1,5 +1,40 @@
 /* TABLEAU */
 
+
+@keyframes paper {
+    0% {
+        clip-path:  polygon(29% 17%, 32% 28%, 35% 26%); 
+    }
+    25%{
+      clip-path: polygon(30% 17%, 35% 27%, 30% 29%) ;
+      background-color: rgb(239, 236, 232);
+    }
+    50%{
+      clip-path: polygon(29% 17%, 35% 28%, 32% 26%);
+    }
+    100% {
+      clip-path:  polygon(29% 17%, 32% 28%, 35% 26%); 
+  }
+}
+
+@keyframes paper-corner {
+    0% {
+        clip-path: polygon(39% 4%, 39% 6%, 39% 10%, 39% 14%, 39% 19%, 40% 22%, 41% 25%, 42% 27%, 44% 27%, 47% 27%, 51% 26%, 53% 26%, 56% 26%, 55% 24%, 54% 20%, 54% 16%, 54% 11%, 55% 7%, 55% 4%, 50% 4%, 46% 4%, 42% 4%); 
+        
+    }
+    25%{
+        clip-path: polygon(39% 4%, 39% 6%, 39% 10%, 39% 14%, 39% 19%, 40% 22%, 41% 25%, 42% 27%, 44% 27%, 47% 27%, 51% 26%, 53% 26%, 56% 26%, 55% 24%, 54% 20%, 54% 16%, 54% 11%, 55% 7%, 55% 4%, 50% 4%, 46% 4%, 42% 4%);
+
+    }
+    50%{
+        clip-path: polygon(39% 4%, 39% 6%, 39% 10%, 39% 14%, 39% 19%, 40% 22%, 41% 25%, 42% 27%, 44% 27%, 47% 27%, 51% 26%, 53% 26%, 56% 26%, 55% 24%, 54% 20%, 54% 16%, 54% 11%, 55% 7%, 55% 4%, 50% 4%, 46% 4%, 42% 4%); 
+    }
+    100% {
+        clip-path: polygon(39% 4%, 39% 6%, 39% 10%, 39% 14%, 39% 19%, 40% 22%, 41% 25%, 42% 27%, 44% 27%, 47% 27%, 51% 26%, 53% 26%, 56% 26%, 55% 24%, 54% 20%, 54% 16%, 54% 11%, 55% 7%, 55% 4%, 50% 4%, 46% 4%, 42% 4%);
+
+  }
+}
+ 
 .projects{
     position: absolute;
     margin-top: 160px;
@@ -84,60 +119,13 @@
 
 
 
-/* POLAROID */
 
-.polaroid{
-    background-color: aliceblue;
-    width: 50px;
-    height: 50px;
-    margin-top: 150px;
-    margin-left: 170px;
-    position: absolute;
-    z-index: 12;
-    transition: all 0.3s ease; 
-    clip-path: polygon(0 28%, 56% 8%, 55% 79%, 0% 100%);
-    cursor: pointer;
-           
-}
 
-.polaroid-expanded{
-    background-color: aliceblue;
-    width: 500px;
-    height: 600px;
-    margin-top: -50px;
-    margin-left: 210px;
-    position: absolute;
-    z-index: 12;
-    cursor: default;
-    transition: all 0.3s ease;  
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-}
+/* 
+-----------------SCOTCH-----------------
 
-.photo{
-    background-color: rgb(33, 34, 35);
-    width: 52px;
-    height: 52px;
-    margin-top: 2px;
-    margin-left: 2px;
-    position: absolute;
-    z-index: 7;
-    transition: all 0.1s ease;  
-    clip-path: polygon(0 28%, 47% 12%, 46% 60%, 0 77%);
-    
-}
 
-.photo-expanded{
-    background-color: rgb(33, 34, 35);
-    width: 450px;
-    height: 300px;
-    margin-top: 20px;
-    margin-left: 24px;
-    position: absolute;
-    z-index: 7;
-    transition: all 0.3s ease;
-}
-
-/* .scotch{
+.scotch{
     background-color: rgba(152, 162, 172, 0.644);
     width: 72px;
     height: 72px;
@@ -155,71 +143,10 @@
 .down{
     margin-top: 136px;
     margin-left: 146px;  
-} */
+} 
 
-.close {
-	overflow: hidden;
-	position: absolute;
-	border: none;
-	padding: 0;
-    left: 228px;
-    top: -55px;
-	width: 3em; height: 3em;
-	border-radius: 50%;
-	background: white;
-	color: #1da1f2;
-	font: inherit;
-	text-indent: 100%;
-	cursor: pointer;
-    transition: all 0.8s;
-}
-
-.close:focus {
-    outline: solid 0 transparent;
-    box-shadow: 0 0 0 2px #8ed0f9
-}
-
-.close:hover {
-    background: rgba(29, 161, 142, .1)
-}
-
-.close:before, .close:after {
-    position: absolute;
-    top: 15%; left: calc(50% - .0625em);
-    width: .125em; height: 70%;
-    border-radius: .125em;
-    transform: rotate(45deg);
-    background: currentcolor;
-    content: ''
-}
-
-.close:after { transform: rotate(-45deg); }
+*/
 
 
-.polaroid-text{
-    width: 500px;
-    height: 280px;
-    margin-top: 320px;
-    transition-property: font-size;
-    transition-duration: 1s;
-    transition-delay: 0.3s ;
-}
+/* --------------THUMBTACK----------------- */
 
-
-
-
-
-
-
-.polaroid-text .technos{
-    display: flex;
-    gap: 1rem;
-    flex-direction: column;
-    position: absolute;
-    margin-top: 10px;
-    margin-left: 520px;
-    background-color: aliceblue;
-    padding: 1rem;
-    border-radius: 10%;
-   
-}

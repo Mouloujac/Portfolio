@@ -1,38 +1,20 @@
 import React, { useState } from "react";
+import "./Document.css"
 
-
-function Polaroid() {
-  const [isExpanded, setIsExpanded] = useState(false);
+function Polaroid(props) {
+  
   const [showText, setShowText] = useState(false);
 
-  const handlePolaroidClick = () => {
-    if(isExpanded == false){
-        setIsExpanded(!isExpanded);
-
-        if (!isExpanded) {
-          setTimeout(() => {
-            setShowText(true);
-      
-          }, 180);
-          
-        }
-    }
-  };
   
-  const handleCloseClick = (e) => {
-    setIsExpanded(false);
-    setShowText(false);
-  };
-
   
   return (
-    <div className={`${isExpanded ? 'polaroid-expanded' : 'polaroid'}`} onClick={handlePolaroidClick}>
-      <div className={`${isExpanded ? 'photo-expanded' : 'photo'}`} ></div>
+    <div className={`${props.isExpanded ? 'polaroid-expanded' : 'polaroid'}`} id={`${props.isExpanded ? '' : props.id}`} >
+      <div className={`${props.isExpanded ? 'photo-expanded' : 'photo'}`} ></div>
       <div className="scotch up"></div>
       <div className="scotch down"></div>
-      {isExpanded && (
+      {props.isExpanded && (
         <>
-        <div className="close" onClick={handleCloseClick} ></div>
+        <div className="close" ></div>
         {showText && (
         <div className="polaroid-text">
           <div className="technos">

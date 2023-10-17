@@ -7,6 +7,7 @@ import Parquet from './Parquet/Parquet';
 import Screen from './Screen/Screen';
 import Projects from './Projects/Projects';
 import Carpet from './Carpet/Carpet';
+import MusicNotes from './MusicNotes/MusicNotes';
 
 function Room() {
   const leftRef = useRef(null);
@@ -18,13 +19,13 @@ function Room() {
   const centerRoom = () => {
     if (roomRef.current) {
       const windowWidth = window.innerWidth;
-      console.log(windowWidth);
+      
       const leftWidth = leftRef.current.offsetWidth;
       const rightWidth = rightRef.current.offsetWidth;
       const roomWidth = (leftWidth + rightWidth);
-      console.log(roomWidth);
+      
       const marginLeft = (windowWidth - roomWidth) / 2;
-      console.log(marginLeft);
+      
       setRoomWidth(roomWidth);
       roomRef.current.style.marginLeft = `${marginLeft}px`;
     }
@@ -55,6 +56,7 @@ function Room() {
         <div className='shadow-line-left'></div>
       </div>
       <div  ref={rightRef} id="right-wall-shadow"></div>
+      <MusicNotes />
       <Carpet />
       <Avatar />
       <Desk />

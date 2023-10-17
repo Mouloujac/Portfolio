@@ -1,10 +1,26 @@
 import React from "react";
 import "./Projects.css";
+import { useState } from "react";
 
-import Polaroid from "./Polaroid";
 
+import Document from "./Document/Document";
+import DocumentSecond from "./Document/DocumentSecond";
+import DocumentThird from "./Document/DocumentThird";
 
 function Projects (){
+    const [isExpanded, setIsExpanded] = useState(false);
+
+    const handleDocumentClick = () => {
+        if(isExpanded == false){
+            setIsExpanded(!isExpanded);
+            
+        }else{
+            setIsExpanded(!isExpanded);
+            
+        }
+    }
+
+
     return (
         <>
             <div className="projects">
@@ -15,7 +31,15 @@ function Projects (){
                 <div className="shadow-down"></div>
                 <div className="shadow-up"></div>
                 <div className="shadow-left"></div>
-                <Polaroid />
+                <div className="project first" onClick={handleDocumentClick}>
+                    <Document  isExpanded={isExpanded} />
+                </div>
+                <div className="project second">
+                    <DocumentSecond />
+                </div>
+                <div className="project third">
+                    <DocumentThird />  
+                </div>
             </div>
 
         </>

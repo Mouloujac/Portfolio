@@ -16,10 +16,18 @@ function Desk (){
                     <div className='keyboard-shadow'></div>
                     <div className='mouse'></div>
                 </div>
-                <div className="corner-1"></div>
-                <div className="corner-2"></div>
-                <div className="corner-3"></div>
-                <div className="corner-4"></div>
+                <div className="corner-1 foot">
+                    <div className='base'></div>
+                </div>
+                <div className="corner-2 foot">
+                    <div className='base'></div>
+                </div>
+                <div className="corner-3 foot">
+                    <div className='base'></div>
+                </div>
+                <div className="corner-4 foot">
+                    <div className='base'></div>
+                </div>
             </div>
 
         </>

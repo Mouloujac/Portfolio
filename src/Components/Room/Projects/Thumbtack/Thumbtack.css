@@ -1,0 +1,46 @@
+.thumbtack{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 12;
+}
+
+.thumbtack-front{
+    clip-path: circle(14.6% at 50% 50%);
+    background-color: red;
+    position: absolute;
+    left: 2.7px;
+    top: 2.2px;
+    width: 25px;
+    height: 25px;
+}
+
+.thumbtack-shadow{
+    clip-path: circle(14.6% at 50% 50%);
+    background-color: rgb(81, 73, 73);
+    position: absolute;
+    margin-left: 2px;
+    z-index: 3;
+    width: 30px;
+    height: 30px;
+}
+
+.thumbtack-back{
+    clip-path: circle(14.6% at 50% 50%);
+    background-color: red;
+    position: absolute;
+    margin-top: 3px;
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+} 
+
+.thumbtack-needle{
+    width: 10px;
+    height: 1px;
+    background-color: black;
+    rotate: -56deg;
+    margin-top: 20px;
+    margin-left: 8px;
+    z-index: 1;
+}

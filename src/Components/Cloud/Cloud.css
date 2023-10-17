@@ -74,7 +74,7 @@
 	-webkit-animation: animateCloud 18s linear infinite;
 	-moz-animation: animateCloud 18s linear infinite;
 	animation: animateCloud 18s linear infinite;
-	
+	margin-top: 100px;
 	-webkit-transform: scale(0.4);
 	-moz-transform: scale(0.4);
 	transform: scale(0.4);
@@ -84,10 +84,11 @@
 	-webkit-animation: animateCloud 25s linear infinite;
 	-moz-animation: animateCloud 25s linear infinite;
 	animation: animateCloud 25s linear infinite;
-	
-	-webkit-transform: scale(0.55);
-	-moz-transform: scale(0.55);
-	transform: scale(0.55);
+	margin-top: 200px;
+	-webkit-transform: scale(1.45);
+	-moz-transform: scale(1.45);
+	transform: scale(1.45);
+	z-index: 999;
 }
 
 /* OBJECTS */
