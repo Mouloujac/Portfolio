@@ -24,10 +24,28 @@ function Document(props) {
 
   return (
     <>
+      <img id="paper-clip" src={`${props.isExpanded ? './paper-clip.svg' : ''}`}></img>
+      <img id="paper-clip-shadow" src={`${props.isExpanded ? './paper-clip-shadow.svg' : ''}`}></img>
+
       <div
         className={`${props.isExpanded ? 'document-base-expanded' : 'document-base'}`}
-        id="documentFirst"
-      ></div>
+        id="documentFirst">
+          
+          {props.isExpanded &&
+          <div className="description">
+            <h3>Projet de fin d'études</h3>
+            <h4>Site e-commerce</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit sed turpis non iaculis. Praesent efficitur ante in turpis tincidunt volutpat. Quisque sit amet augue congue, laoreet odio eget, rutrum ex. Vivamus commodo malesuada ligula vel condimentum. Sed imperdiet rutrum sapien ac aliquet. Nam eu lacus sem.</p>
+            <p></p>
+            <div className="technos">
+              <img className="icons" src="react.svg"></img>
+              <img className="icons" src="laravel.svg"></img>
+              <img className="icons" src="css.svg"></img>
+            </div>
+            <a>Lien Github</a>
+          </div>
+          } 
+      </div>
 
       <div className="document-corner"></div>
 

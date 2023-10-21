@@ -1,44 +1,41 @@
 .window {
-    position: absolute;
-    width: 296px;
-    height: 374px;
-    clip-path: polygon(0 0, 100% 32%, 100% 87%, 0 54%);
-    background-color: rgb(218, 205, 205);
-    top: 161px;
-    left: 102px;
-    z-index: 2;
-
+  position: absolute;
+  width: 246.6666666667px;
+  height: 311.6666666667px;
+  -webkit-clip-path: polygon(0 0, 100% 32%, 100% 87%, 0 54%);
+          clip-path: polygon(0 0, 100% 32%, 100% 87%, 0 54%);
+  background-color: rgb(218, 205, 205);
+  top: 134.1666666667px;
+  left: 85px;
+  z-index: 2;
+}
+.window-shadow {
+  position: absolute;
+  width: 248.3333333333px;
+  height: 315px;
+  -webkit-clip-path: polygon(0% 3%, 2% 3%, 100% 34%, 100% 88%, 99% 89%, 0 54%);
+          clip-path: polygon(0% 3%, 2% 3%, 100% 34%, 100% 88%, 99% 89%, 0 54%);
+  background-color: rgb(145, 140, 140);
+  top: 125px;
+  left: 85.8333333333px;
 }
 
-.window-shadow{
-    position: absolute;
-    width: 298px;
-    height: 378px;
-    clip-path: polygon(0% 3%, 2% 3%, 100% 34%, 100% 88%, 99% 89%, 0 54%);
-    background-color: rgb(145, 140, 140);
-    top: 150px;
-    left: 103px;
-    
+.shadow-line-right {
+  position: absolute;
+  width: 2px;
+  height: 40px;
+  background-color: rgb(145, 140, 140);
+  left: 111.6666666667px;
+  top: 69.1666666667px;
+  z-index: 1000;
 }
 
-.shadow-line-right{
-    position: absolute;
-    width: 2px;
-    height: 48px;
-    background-color: rgb(145, 140, 140);
-    left:134px;
-    top: 83px;
-    z-index: 1000;
-}
-
-.shadow-line-left{
-    position: absolute;
-    width: 2px;
-    height: 148px;
-    background-color: rgb(145, 140, 140);
-    left: -84px;
-    top: 43px;
-    z-index: 999;
-}
-
-
+.shadow-line-left {
+  position: absolute;
+  width: 2px;
+  height: 123.3333333333px;
+  background-color: rgb(145, 140, 140);
+  left: -70px;
+  top: 35.8333333333px;
+  z-index: 999;
+}/*# sourceMappingURL=Window.css.map */

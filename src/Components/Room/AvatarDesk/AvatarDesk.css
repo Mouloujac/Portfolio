@@ -1,354 +1,355 @@
 @keyframes foot-left-anim {
-    0% {
-      transform: translate(10px, 5px) rotate(32deg); 
-    }
-    25%{
-      transform: translate(0px, 0px) rotate(34deg);
-    }
-    50%{
-      transform: translate(10px, 5px) rotate(32deg);
-    }
-    100% {
-      transform: translate(0px, 0px) rotate(35deg); 
+  0% {
+    transform: translate(10px, 5px) rotate(32deg);
+  }
+  25% {
+    transform: translate(0px, 0px) rotate(34deg);
+  }
+  50% {
+    transform: translate(10px, 5px) rotate(32deg);
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(35deg);
   }
 }
-
 @keyframes foot-right-anim {
-    0% {
-      transform: translate(12px, 2px) rotate(30deg); 
-    }
-    25%{
-      transform: translate(0px, 0px) rotate(33deg);
-    }
-    50%{
-      transform: translate(12px, 2px) rotate(32deg);
-    }
-    100% {
-      transform: translate(0px, 0px) rotate(30deg); 
+  0% {
+    transform: translate(12px, 2px) rotate(30deg);
+  }
+  25% {
+    transform: translate(0px, 0px) rotate(33deg);
+  }
+  50% {
+    transform: translate(12px, 2px) rotate(32deg);
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(30deg);
   }
 }
-
 @keyframes leg-anim {
-    0%   {    clip-path: polygon(0 5%, 48% 15%, 54% 19%, 57% 24%, 60% 31%, 61% 38%, 56% 88%, 34% 86%, 39% 44%, 38% 38%, 34% 33%, 19% 29%, 0 27%);
-    }
-    25%  {    clip-path: polygon(0 5%, 48% 15%, 54% 19%, 57% 24%, 60% 31%, 61% 38%, 66% 85%, 43% 86%, 39% 44%, 38% 38%, 34% 33%, 19% 29%, 0 27%);
-    }
-    50%  {    clip-path: polygon(0 5%, 48% 15%, 54% 19%, 57% 24%, 60% 31%, 61% 38%, 56% 88%, 34% 86%, 39% 44%, 38% 38%, 34% 33%, 19% 29%, 0 27%);
-    }
-    100% {    clip-path: polygon(0 5%, 48% 15%, 54% 19%, 57% 24%, 60% 31%, 61% 38%, 66% 85%, 43% 86%, 39% 44%, 38% 38%, 34% 33%, 19% 29%, 0 27%);
-    }
+  0% {
+    -webkit-clip-path: polygon(0 5%, 48% 15%, 54% 19%, 57% 24%, 60% 31%, 61% 38%, 56% 88%, 34% 86%, 39% 44%, 38% 38%, 34% 33%, 19% 29%, 0 27%);
+            clip-path: polygon(0 5%, 48% 15%, 54% 19%, 57% 24%, 60% 31%, 61% 38%, 56% 88%, 34% 86%, 39% 44%, 38% 38%, 34% 33%, 19% 29%, 0 27%);
+  }
+  25% {
+    -webkit-clip-path: polygon(0 5%, 48% 15%, 54% 19%, 57% 24%, 60% 31%, 61% 38%, 66% 85%, 43% 86%, 39% 44%, 38% 38%, 34% 33%, 19% 29%, 0 27%);
+            clip-path: polygon(0 5%, 48% 15%, 54% 19%, 57% 24%, 60% 31%, 61% 38%, 66% 85%, 43% 86%, 39% 44%, 38% 38%, 34% 33%, 19% 29%, 0 27%);
+  }
+  50% {
+    -webkit-clip-path: polygon(0 5%, 48% 15%, 54% 19%, 57% 24%, 60% 31%, 61% 38%, 56% 88%, 34% 86%, 39% 44%, 38% 38%, 34% 33%, 19% 29%, 0 27%);
+            clip-path: polygon(0 5%, 48% 15%, 54% 19%, 57% 24%, 60% 31%, 61% 38%, 56% 88%, 34% 86%, 39% 44%, 38% 38%, 34% 33%, 19% 29%, 0 27%);
+  }
+  100% {
+    -webkit-clip-path: polygon(0 5%, 48% 15%, 54% 19%, 57% 24%, 60% 31%, 61% 38%, 66% 85%, 43% 86%, 39% 44%, 38% 38%, 34% 33%, 19% 29%, 0 27%);
+            clip-path: polygon(0 5%, 48% 15%, 54% 19%, 57% 24%, 60% 31%, 61% 38%, 66% 85%, 43% 86%, 39% 44%, 38% 38%, 34% 33%, 19% 29%, 0 27%);
+  }
+}
+.avatar-desk {
+  position: absolute;
+  margin-top: 266px;
+  margin-left: 360px;
 }
 
-.avatar-desk{
-    position: absolute;
-    margin-top: 266px;
-    margin-left: 360px;
+.head {
+  top: 25px;
+  left: 150px;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+  background-color: rgb(204, 158, 122);
+  z-index: 9;
 }
 
-.head{
-    top: 20px;
-    left: 150px;
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    clip-path: circle(50% at 50% 50%);
-    background-color: rgb(204, 158, 122);
-    
-    z-index: 9;
-
+.hat {
+  -webkit-clip-path: polygon(15% 29%, 16% 25%, 19% 23%, 22% 20%, 24% 17%, 29% 15%, 33% 12%, 39% 10%, 44% 9%, 49% 9%, 54% 9%, 59% 10%, 64% 12%, 69% 14%, 74% 17%, 79% 21%, 82% 25%, 85% 29%, 87% 33%, 89% 38%, 90% 42%, 91% 46%, 88% 51%, 84% 52%, 78% 53%, 70% 51%, 61% 49%, 52% 47%, 44% 44%, 38% 43%, 32% 40%, 26% 37%, 19% 34%);
+          clip-path: polygon(15% 29%, 16% 25%, 19% 23%, 22% 20%, 24% 17%, 29% 15%, 33% 12%, 39% 10%, 44% 9%, 49% 9%, 54% 9%, 59% 10%, 64% 12%, 69% 14%, 74% 17%, 79% 21%, 82% 25%, 85% 29%, 87% 33%, 89% 38%, 90% 42%, 91% 46%, 88% 51%, 84% 52%, 78% 53%, 70% 51%, 61% 49%, 52% 47%, 44% 44%, 38% 43%, 32% 40%, 26% 37%, 19% 34%);
+  margin-left: 140px;
+  margin-top: 12px;
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  background-color: rgb(71, 71, 165);
+  z-index: 9;
 }
 
-.hat{
-    clip-path: polygon(15% 29%, 16% 25%, 19% 23%, 22% 20%, 24% 17%, 29% 15%, 33% 12%, 39% 10%, 44% 9%, 49% 9%, 54% 9%, 59% 10%, 64% 12%, 69% 14%, 74% 17%, 79% 21%, 82% 25%, 85% 29%, 87% 33%, 89% 38%, 90% 42%, 91% 46%, 88% 51%, 84% 52%, 78% 53%, 70% 51%, 61% 49%, 52% 47%, 44% 44%, 38% 43%, 32% 40%, 26% 37%, 19% 34%);
-    margin-left: 140px;
-    margin-top: 10px;
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    background-color: rgb(71, 71, 165);
-    z-index: 9;
+.hat-back {
+  -webkit-clip-path: ellipse(40% 9% at 50% 50%);
+          clip-path: ellipse(40% 9% at 50% 50%);
+  margin-left: 155px;
+  margin-top: 8px;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background-color: rgb(32, 32, 106);
+  z-index: 9;
+  rotate: 15deg;
 }
 
-.hat-back{
-    clip-path: ellipse(40% 9% at 50% 50%);
-    margin-left: 165px;
-    margin-top: 10px;
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    background-color: rgb(32, 32, 106);
-    z-index: 9;
-    rotate: 15deg;
+.music-head {
+  top: 20px;
+  left: 133px;
+  background-color: rgb(28, 28, 28);
+  transform: rotate(15deg);
+  z-index: 10;
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  -webkit-clip-path: polygon(24% 38%, 25% 32%, 26% 28%, 27% 23%, 29% 18%, 32% 13%, 35% 9%, 39% 5%, 45% 2%, 49% 0, 55% 0%, 60% 1%, 64% 4%, 66% 9%, 60% 6%, 55% 6%, 52% 7%, 49% 9%, 46% 14%, 44% 18%, 43% 21%, 42% 26%, 41% 31%, 40% 38%);
+          clip-path: polygon(24% 38%, 25% 32%, 26% 28%, 27% 23%, 29% 18%, 32% 13%, 35% 9%, 39% 5%, 45% 2%, 49% 0, 55% 0%, 60% 1%, 64% 4%, 66% 9%, 60% 6%, 55% 6%, 52% 7%, 49% 9%, 46% 14%, 44% 18%, 43% 21%, 42% 26%, 41% 31%, 40% 38%);
 }
 
-.music-head{
-    top: 20px;
-    left: 133px;
-    background-color: rgb(28, 28, 28);
-    transform: rotate(15deg);
-    z-index: 10;
-    width: 120px;
-    height: 120px;
-    position: absolute;
-    clip-path: polygon(24% 38%, 25% 32%, 26% 28%, 27% 23%, 29% 18%, 32% 13%, 35% 9%, 39% 5%, 45% 2%, 49% 0, 55% 0%, 60% 1%, 64% 4%, 66% 9%, 60% 6%, 55% 6%, 52% 7%, 49% 9%, 46% 14%, 44% 18%, 43% 21%, 42% 26%, 41% 31%, 40% 38%);
+.music-ears-center {
+  top: 50px;
+  left: 158px;
+  background-color: rgb(121, 119, 119);
+  transform: rotate(15deg);
+  z-index: 10;
+  width: 30px;
+  height: 30px;
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+  position: absolute;
 }
 
-.music-ears-center{
-    top: 50px;
-    left: 158px;
-    background-color: rgb(121, 119, 119);
-    transform: rotate(15deg);
-    z-index: 10;
-    width: 30px;
-    height: 30px;
-    clip-path: circle(50% at 50% 50%);
-    position: absolute;
+#reactLogo {
+  margin-top: 6px;
+  margin-left: 1px;
+  width: 20px;
 }
 
-#reactLogo{
-    margin-top: 6px;
-    margin-left: 1px;
-    width: 20px;
+.music-ears {
+  top: 45px;
+  left: 155px;
+  background-color: rgb(28, 28, 28);
+  transform: rotate(15deg);
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+  position: absolute;
 }
 
-.music-ears{
-    top: 45px;
-    left: 155px;
-    background-color: rgb(28, 28, 28);
-    transform: rotate(15deg);
-    z-index: 10;
-    width: 40px;
-    height: 40px;
-    clip-path: circle(50% at 50% 50%);
-    position: absolute;
+.body-desk {
+  top: 73px;
+  left: 115px;
+  background-color: rgb(195, 192, 198);
+  z-index: 5;
+  position: absolute;
+  width: 130px;
+  height: 140px;
+  -webkit-clip-path: polygon(31% 56%, 30% 38%, 32% 26%, 36% 21%, 43% 20%, 53% 21%, 64% 19%, 73% 18%, 77% 22%, 78% 28%, 77% 35%, 73% 61%, 49% 67%, 36% 67%, 33% 63%);
+          clip-path: polygon(31% 56%, 30% 38%, 32% 26%, 36% 21%, 43% 20%, 53% 21%, 64% 19%, 73% 18%, 77% 22%, 78% 28%, 77% 35%, 73% 61%, 49% 67%, 36% 67%, 33% 63%);
 }
 
-
-.body-desk{
-    top: 73px;
-    left: 115px;
-    background-color: rgb(195, 192, 198);
-    z-index: 5;
-    position: absolute;
-    width: 130px;
-    height: 140px;
-    clip-path: polygon(31% 56%, 30% 38%, 32% 26%, 36% 21%, 43% 20%, 53% 21%, 64% 19%, 73% 18%, 77% 22%, 78% 28%, 77% 35%, 73% 61%, 49% 67%, 36% 67%, 33% 63%);
+.left-shirt {
+  top: 58px;
+  left: 120px;
+  background-color: rgb(195, 192, 198);
+  z-index: 7;
+  position: absolute;
+  width: 130px;
+  height: 140px;
+  transform: rotate(-40deg);
+  -webkit-clip-path: polygon(25% 25%, 26% 34%, 28% 39%, 32% 42%, 35% 47%, 50% 39%, 53% 36%, 54% 30%, 52% 25%, 47% 22%, 42% 22%, 37% 22%);
+          clip-path: polygon(25% 25%, 26% 34%, 28% 39%, 32% 42%, 35% 47%, 50% 39%, 53% 36%, 54% 30%, 52% 25%, 47% 22%, 42% 22%, 37% 22%);
 }
 
-.left-shirt{
-    top: 58px;
-    left: 120px;
-    background-color: rgb(195, 192, 198);
-    z-index: 7;
-    position: absolute;
-    width: 130px;
-    height: 140px;
-    transform: rotate(-40deg);
-    clip-path: polygon(25% 25%, 26% 34%, 28% 39%, 32% 42%, 35% 47%, 50% 39%, 53% 36%, 54% 30%, 52% 25%, 47% 22%, 42% 22%, 37% 22%);
+.left-arm {
+  top: 36px;
+  left: 58px;
+  background-color: rgb(204, 158, 122);
+  z-index: 4;
+  position: absolute;
+  width: 130px;
+  height: 140px;
+  transform: rotate(40deg);
+  -webkit-clip-path: polygon(86% 32%, 85% 42%, 83% 58%, 75% 65%, 69% 69%, 62% 71%, 53% 73%, 49% 65%, 60% 60%, 67% 56%, 71% 53%, 73% 49%, 73% 45%, 73% 39%, 73% 31%);
+          clip-path: polygon(86% 32%, 85% 42%, 83% 58%, 75% 65%, 69% 69%, 62% 71%, 53% 73%, 49% 65%, 60% 60%, 67% 56%, 71% 53%, 73% 49%, 73% 45%, 73% 39%, 73% 31%);
 }
 
-.left-arm{
-    top: 36px;
-    left: 58px;
-    background-color: rgb(204, 158, 122);
-    z-index: 4;
-    position: absolute;
-    width: 130px;
-    height: 140px;
-    transform: rotate(40deg);
-    clip-path: polygon(86% 32%, 85% 42%, 83% 58%, 75% 65%, 69% 69%, 62% 71%, 53% 73%, 49% 65%, 60% 60%, 67% 56%, 71% 53%, 73% 49%, 73% 45%, 73% 39%, 73% 31%);
+.left-hand {
+  top: 90px;
+  left: 80px;
+  background-color: rgb(204, 158, 122);
+  z-index: 4;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  transform: rotate(6deg);
+  -webkit-clip-path: polygon(35% 80%, 28% 73%, 21% 70%, 14% 68%, 8% 66%, 5% 63%, 8% 59%, 14% 60%, 20% 61%, 28% 64%, 32% 67%, 25% 59%, 19% 56%, 14% 55%, 10% 52%, 11% 48%, 14% 47%, 18% 48%, 22% 50%, 28% 53%, 33% 57%, 35% 55%, 31% 51%, 25% 47%, 19% 45%, 18% 39%, 24% 38%, 33% 41%, 40% 44%, 44% 48%, 48% 45%, 45% 40%, 41% 36%, 36% 35%, 33% 34%, 30% 34%, 31% 29%, 40% 28%, 53% 33%, 63% 45%, 70% 61%, 75% 70%, 55% 87%);
+          clip-path: polygon(35% 80%, 28% 73%, 21% 70%, 14% 68%, 8% 66%, 5% 63%, 8% 59%, 14% 60%, 20% 61%, 28% 64%, 32% 67%, 25% 59%, 19% 56%, 14% 55%, 10% 52%, 11% 48%, 14% 47%, 18% 48%, 22% 50%, 28% 53%, 33% 57%, 35% 55%, 31% 51%, 25% 47%, 19% 45%, 18% 39%, 24% 38%, 33% 41%, 40% 44%, 44% 48%, 48% 45%, 45% 40%, 41% 36%, 36% 35%, 33% 34%, 30% 34%, 31% 29%, 40% 28%, 53% 33%, 63% 45%, 70% 61%, 75% 70%, 55% 87%);
 }
 
-
-.left-hand{
-    top: 90px;
-    left: 80px;
-    background-color: rgb(204, 158, 122);
-    z-index: 4;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    transform: rotate(6deg);
-    clip-path: polygon(35% 80%, 28% 73%, 21% 70%, 14% 68%, 8% 66%, 5% 63%, 8% 59%, 14% 60%, 20% 61%, 28% 64%, 32% 67%, 25% 59%, 19% 56%, 14% 55%, 10% 52%, 11% 48%, 14% 47%, 18% 48%, 22% 50%, 28% 53%, 33% 57%, 35% 55%, 31% 51%, 25% 47%, 19% 45%, 18% 39%, 24% 38%, 33% 41%, 40% 44%, 44% 48%, 48% 45%, 45% 40%, 41% 36%, 36% 35%, 33% 34%, 30% 34%, 31% 29%, 40% 28%, 53% 33%, 63% 45%, 70% 61%, 75% 70%, 55% 87%);
+.right-shirt {
+  top: 50px;
+  left: 164px;
+  background-color: rgb(195, 192, 198);
+  z-index: 5;
+  position: absolute;
+  width: 130px;
+  height: 140px;
+  transform: rotate(-40deg);
+  -webkit-clip-path: polygon(25% 25%, 26% 34%, 28% 39%, 32% 42%, 35% 47%, 50% 39%, 53% 36%, 54% 30%, 52% 25%, 47% 22%, 42% 22%, 37% 22%);
+          clip-path: polygon(25% 25%, 26% 34%, 28% 39%, 32% 42%, 35% 47%, 50% 39%, 53% 36%, 54% 30%, 52% 25%, 47% 22%, 42% 22%, 37% 22%);
 }
 
-
-.right-shirt{
-    top: 50px;
-    left: 164px;
-    background-color: rgb(195, 192, 198);
-    z-index: 4;
-    position: absolute;
-    width: 130px;
-    height: 140px;
-    transform: rotate(-40deg);
-    clip-path: polygon(25% 25%, 26% 34%, 28% 39%, 32% 42%, 35% 47%, 50% 39%, 53% 36%, 54% 30%, 52% 25%, 47% 22%, 42% 22%, 37% 22%);
+.right-arm {
+  left: 100px;
+  top: 20px;
+  background-color: rgb(204, 158, 122);
+  z-index: 4;
+  position: absolute;
+  width: 125px;
+  height: 135px;
+  transform: rotate(50deg);
+  -webkit-clip-path: polygon(86% 32%, 85% 42%, 83% 58%, 75% 65%, 69% 69%, 62% 71%, 53% 73%, 49% 65%, 60% 60%, 67% 56%, 71% 53%, 73% 49%, 73% 45%, 73% 39%, 73% 31%);
+          clip-path: polygon(86% 32%, 85% 42%, 83% 58%, 75% 65%, 69% 69%, 62% 71%, 53% 73%, 49% 65%, 60% 60%, 67% 56%, 71% 53%, 73% 49%, 73% 45%, 73% 39%, 73% 31%);
 }
 
-.right-arm{
-    left: 100px;
-    top: 20px;
-    background-color: rgb(204, 158, 122);
-    z-index: 4;
-    position: absolute;
-    width: 125px;
-    height: 135px;
-    transform: rotate(50deg);
-    clip-path: polygon(86% 32%, 85% 42%, 83% 58%, 75% 65%, 69% 69%, 62% 71%, 53% 73%, 49% 65%, 60% 60%, 67% 56%, 71% 53%, 73% 49%, 73% 45%, 73% 39%, 73% 31%);
+.right-hand {
+  top: 25px;
+  left: 98px;
+  background-color: rgb(204, 158, 122);
+  z-index: 6;
+  position: absolute;
+  width: 105px;
+  height: 105px;
+  transform: rotate(-15deg);
+  -webkit-clip-path: polygon(21% 73%, 22% 75%, 26% 79%, 35% 82%, 41% 84%, 50% 78%, 50% 72%, 43% 63%, 36% 59%, 29% 58%, 25% 59%, 30% 66%, 32% 68%, 36% 70%, 36% 73%, 32% 74%, 29% 74%, 26% 72%, 23% 70%);
+          clip-path: polygon(21% 73%, 22% 75%, 26% 79%, 35% 82%, 41% 84%, 50% 78%, 50% 72%, 43% 63%, 36% 59%, 29% 58%, 25% 59%, 30% 66%, 32% 68%, 36% 70%, 36% 73%, 32% 74%, 29% 74%, 26% 72%, 23% 70%);
 }
 
-.right-hand{
-    top: 25px;
-    left: 98px;
-    background-color: rgb(204, 158, 122);
-    z-index: 6;
-    position: absolute;
-    width: 105px;
-    height: 105px;
-
-    transform: rotate(-15deg);
-    clip-path: polygon(21% 73%, 22% 75%, 26% 79%, 35% 82%, 41% 84%, 50% 78%, 50% 72%, 43% 63%, 36% 59%, 29% 58%, 25% 59%, 30% 66%, 32% 68%, 36% 70%, 36% 73%, 32% 74%, 29% 74%, 26% 72%, 23% 70%);
+.left-leg-desk {
+  top: 130px;
+  left: 55px;
+  -webkit-clip-path: polygon(0 5%, 48% 15%, 54% 19%, 57% 24%, 60% 31%, 61% 38%, 66% 85%, 43% 86%, 39% 44%, 38% 38%, 34% 33%, 19% 29%, 0 27%);
+          clip-path: polygon(0 5%, 48% 15%, 54% 19%, 57% 24%, 60% 31%, 61% 38%, 66% 85%, 43% 86%, 39% 44%, 38% 38%, 34% 33%, 19% 29%, 0 27%);
+  transform: scaleX(-1) rotate(-15deg);
+  background-color: rgb(56, 78, 91);
+  position: absolute;
+  width: 120px;
+  height: 100px;
+  animation: alternate-reverse;
+  animation-name: leg-anim;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+  z-index: 3;
 }
 
-.left-leg-desk{   
-    top: 130px;
-    left: 55px;
-    clip-path: polygon(0 5%, 48% 15%, 54% 19%, 57% 24%, 60% 31%, 61% 38%, 66% 85%, 43% 86%, 39% 44%, 38% 38%, 34% 33%, 19% 29%, 0 27%);
-    transform: scaleX(-1) rotate(-15deg);
-    background-color: rgb(56, 78, 91);
-    position: absolute;
-    width: 120px;
-    height: 100px;
-    animation: alternate-reverse;
-    animation-name: leg-anim; 
-    animation-iteration-count: infinite;
-    animation-duration: 6s;
-    z-index: 3;
-} 
- 
-
-.left-foot{
-    top: 180px;
-    left: 71px; 
-    clip-path: polygon(63% 15%, 64% 18%, 65% 21%, 67% 26%, 69% 29%, 72% 33%, 76% 37%, 79% 40%, 82% 44%, 85% 48%, 88% 52%, 91% 57%, 92% 60%, 87% 63%, 83% 65%, 78% 67%, 73% 69%, 67% 72%, 62% 75%, 57% 77%, 51% 79%, 46% 83%, 40% 86%, 34% 89%, 29% 90%, 23% 92%, 17% 93%, 13% 92%, 9% 89%, 9% 85%, 11% 81%, 14% 79%, 18% 77%, 23% 73%, 29% 68%, 33% 61%, 35% 55%, 35% 49%, 34% 41%, 34% 35%, 34% 30%, 35% 27%, 38% 25%, 41% 24%, 46% 21%, 51% 19%, 57% 16%);    
-    width: 50px; 
-    transform: rotate(28deg);
-    background-color:aliceblue;
-    height: 60px;
-    position: absolute;
-    z-index: 1;
-    animation: alternate-reverse; 
-    animation-name: foot-left-anim; 
-    animation-iteration-count: infinite;
-    animation-duration: 6s;
+.left-foot {
+  top: 180px;
+  left: 71px;
+  -webkit-clip-path: polygon(63% 15%, 64% 18%, 65% 21%, 67% 26%, 69% 29%, 72% 33%, 76% 37%, 79% 40%, 82% 44%, 85% 48%, 88% 52%, 91% 57%, 92% 60%, 87% 63%, 83% 65%, 78% 67%, 73% 69%, 67% 72%, 62% 75%, 57% 77%, 51% 79%, 46% 83%, 40% 86%, 34% 89%, 29% 90%, 23% 92%, 17% 93%, 13% 92%, 9% 89%, 9% 85%, 11% 81%, 14% 79%, 18% 77%, 23% 73%, 29% 68%, 33% 61%, 35% 55%, 35% 49%, 34% 41%, 34% 35%, 34% 30%, 35% 27%, 38% 25%, 41% 24%, 46% 21%, 51% 19%, 57% 16%);
+          clip-path: polygon(63% 15%, 64% 18%, 65% 21%, 67% 26%, 69% 29%, 72% 33%, 76% 37%, 79% 40%, 82% 44%, 85% 48%, 88% 52%, 91% 57%, 92% 60%, 87% 63%, 83% 65%, 78% 67%, 73% 69%, 67% 72%, 62% 75%, 57% 77%, 51% 79%, 46% 83%, 40% 86%, 34% 89%, 29% 90%, 23% 92%, 17% 93%, 13% 92%, 9% 89%, 9% 85%, 11% 81%, 14% 79%, 18% 77%, 23% 73%, 29% 68%, 33% 61%, 35% 55%, 35% 49%, 34% 41%, 34% 35%, 34% 30%, 35% 27%, 38% 25%, 41% 24%, 46% 21%, 51% 19%, 57% 16%);
+  width: 50px;
+  transform: rotate(28deg);
+  background-color: aliceblue;
+  height: 60px;
+  position: absolute;
+  z-index: 1;
+  animation: alternate-reverse;
+  animation-name: foot-left-anim;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
 }
 
-
-.right-leg-desk{
-    top: 115px;
-    left: 90px;
-    clip-path: polygon(0 5%, 48% 15%, 54% 19%, 57% 24%, 60% 31%, 61% 38%, 66% 85%, 43% 86%, 39% 44%, 38% 38%, 34% 33%, 19% 29%, 0 27%);
-    transform: scaleX(-1) rotate(5deg);
-    background-color: rgb(56, 78, 91);
-    position: absolute;
-    width: 117px;
-    height: 97px;
-    z-index: 3;
-    animation: alternate-reverse;
-    animation-name: leg-anim; 
-    animation-iteration-count: infinite;
-    animation-duration: 10s;
+.right-leg-desk {
+  top: 115px;
+  left: 90px;
+  -webkit-clip-path: polygon(0 5%, 48% 15%, 54% 19%, 57% 24%, 60% 31%, 61% 38%, 66% 85%, 43% 86%, 39% 44%, 38% 38%, 34% 33%, 19% 29%, 0 27%);
+          clip-path: polygon(0 5%, 48% 15%, 54% 19%, 57% 24%, 60% 31%, 61% 38%, 66% 85%, 43% 86%, 39% 44%, 38% 38%, 34% 33%, 19% 29%, 0 27%);
+  transform: scaleX(-1) rotate(5deg);
+  background-color: rgb(56, 78, 91);
+  position: absolute;
+  width: 117px;
+  height: 97px;
+  z-index: 3;
+  animation: alternate-reverse;
+  animation-name: leg-anim;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
 }
 
-.right-foot{
-    top: 175px; 
-    left: 120px;
-    clip-path: polygon(63% 15%, 64% 18%, 65% 21%, 67% 26%, 69% 29%, 72% 33%, 76% 37%, 79% 40%, 82% 44%, 85% 48%, 88% 52%, 91% 57%, 92% 60%, 87% 63%, 83% 65%, 78% 67%, 73% 69%, 67% 72%, 62% 75%, 57% 77%, 51% 79%, 46% 83%, 40% 86%, 34% 89%, 29% 90%, 23% 92%, 17% 93%, 13% 92%, 9% 89%, 9% 85%, 11% 81%, 14% 79%, 18% 77%, 23% 73%, 29% 68%, 33% 61%, 35% 55%, 35% 49%, 34% 41%, 34% 35%, 34% 30%, 35% 27%, 38% 25%, 41% 24%, 46% 21%, 51% 19%, 57% 16%);   
-    width: 50px; 
-    transform: rotate(18deg);
-    background-color:aliceblue;
-    height: 47px;
-    position: absolute;
-    z-index: 2;
-    animation: alternate-reverse;
-    animation-name: foot-right-anim; 
-    animation-iteration-count: infinite;
-    animation-duration: 10s;
+.right-foot {
+  top: 175px;
+  left: 120px;
+  -webkit-clip-path: polygon(63% 15%, 64% 18%, 65% 21%, 67% 26%, 69% 29%, 72% 33%, 76% 37%, 79% 40%, 82% 44%, 85% 48%, 88% 52%, 91% 57%, 92% 60%, 87% 63%, 83% 65%, 78% 67%, 73% 69%, 67% 72%, 62% 75%, 57% 77%, 51% 79%, 46% 83%, 40% 86%, 34% 89%, 29% 90%, 23% 92%, 17% 93%, 13% 92%, 9% 89%, 9% 85%, 11% 81%, 14% 79%, 18% 77%, 23% 73%, 29% 68%, 33% 61%, 35% 55%, 35% 49%, 34% 41%, 34% 35%, 34% 30%, 35% 27%, 38% 25%, 41% 24%, 46% 21%, 51% 19%, 57% 16%);
+          clip-path: polygon(63% 15%, 64% 18%, 65% 21%, 67% 26%, 69% 29%, 72% 33%, 76% 37%, 79% 40%, 82% 44%, 85% 48%, 88% 52%, 91% 57%, 92% 60%, 87% 63%, 83% 65%, 78% 67%, 73% 69%, 67% 72%, 62% 75%, 57% 77%, 51% 79%, 46% 83%, 40% 86%, 34% 89%, 29% 90%, 23% 92%, 17% 93%, 13% 92%, 9% 89%, 9% 85%, 11% 81%, 14% 79%, 18% 77%, 23% 73%, 29% 68%, 33% 61%, 35% 55%, 35% 49%, 34% 41%, 34% 35%, 34% 30%, 35% 27%, 38% 25%, 41% 24%, 46% 21%, 51% 19%, 57% 16%);
+  width: 50px;
+  transform: rotate(18deg);
+  background-color: aliceblue;
+  height: 47px;
+  position: absolute;
+  z-index: 2;
+  animation: alternate-reverse;
+  animation-name: foot-right-anim;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
 }
 
-/* left foot 1:
-clip-path: polygon(63% 15%, 64% 18%, 65% 21%, 67% 26%, 69% 29%, 72% 33%, 76% 37%, 79% 40%, 82% 44%, 85% 48%, 88% 52%, 91% 57%, 92% 60%, 87% 63%, 83% 65%, 78% 67%, 73% 69%, 67% 72%, 62% 75%, 57% 77%, 51% 79%, 46% 83%, 40% 86%, 34% 89%, 29% 90%, 23% 92%, 17% 93%, 13% 92%, 9% 89%, 9% 85%, 11% 81%, 14% 79%, 18% 77%, 23% 73%, 29% 68%, 33% 61%, 35% 55%, 35% 49%, 34% 41%, 34% 35%, 34% 30%, 35% 27%, 38% 25%, 41% 24%, 46% 21%, 51% 19%, 57% 16%);    width: 50px; 
-left: 787px;
-top: 547px;
-transform: rotate(18deg);
-
-left foot 2
-clip-path: polygon(63% 15%, 64% 18%, 65% 21%, 67% 26%, 69% 29%, 72% 33%, 76% 37%, 79% 40%, 82% 44%, 85% 48%, 88% 52%, 91% 57%, 92% 60%, 87% 63%, 83% 65%, 78% 67%, 73% 69%, 67% 72%, 62% 75%, 57% 77%, 51% 79%, 46% 83%, 40% 86%, 34% 89%, 29% 90%, 23% 92%, 17% 93%, 13% 92%, 9% 89%, 9% 85%, 11% 81%, 14% 79%, 18% 77%, 23% 73%, 29% 68%, 33% 61%, 35% 55%, 35% 49%, 34% 41%, 34% 35%, 34% 30%, 35% 27%, 38% 25%, 41% 24%, 46% 21%, 51% 19%, 57% 16%);    width: 50px; 
-left: 799px;
-top: 549px;
-transform: rotate(20deg);
-*/
-
-
-
-.chair{
-    position: absolute;
-    top: 83px;
-    left: 94px;
+/* left foot 1: */
+.chair {
+  position: absolute;
+  top: 83px;
+  left: 94px;
 }
 
-.chair-sit{
-    top: 12px;
-    clip-path: polygon(51% 52%, 50% 33%, 52% 25%, 57% 20%, 81% 13%, 86% 13%, 88% 14%, 91% 18%, 90% 38%, 89% 55%, 87% 65%, 82% 71%, 75% 75%, 63% 78%, 31% 72%, 25% 67%, 23% 58%, 24% 51%, 28% 45%, 34% 45%);
-    background-color: rgb(40, 35, 45);
-    position: absolute;
-    width: 130px;
-    height: 130px;
-    z-index: 9;
+.chair-sit {
+  top: 12px;
+  -webkit-clip-path: polygon(51% 52%, 50% 33%, 52% 25%, 57% 20%, 81% 13%, 86% 13%, 88% 14%, 91% 18%, 90% 38%, 89% 55%, 87% 65%, 82% 71%, 75% 75%, 63% 78%, 31% 72%, 25% 67%, 23% 58%, 24% 51%, 28% 45%, 34% 45%);
+          clip-path: polygon(51% 52%, 50% 33%, 52% 25%, 57% 20%, 81% 13%, 86% 13%, 88% 14%, 91% 18%, 90% 38%, 89% 55%, 87% 65%, 82% 71%, 75% 75%, 63% 78%, 31% 72%, 25% 67%, 23% 58%, 24% 51%, 28% 45%, 34% 45%);
+  background-color: rgb(40, 35, 45);
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  z-index: 9;
 }
 
-.chair-sit-right{
-    left: 50px;
-    clip-path: polygon(35% 20%, 40% 18%, 44% 18%, 48% 18%, 51% 19%, 53% 22%, 54% 24%, 54% 28%, 54% 35%, 54% 43%, 54% 50%, 52% 60%, 46% 68%, 38% 73%, 29% 24%);
-    background-color: rgb(40, 35, 45);
-    position: absolute;
-    width: 140px;
-    height: 150px;
-    z-index: 9;
-    rotate: 8deg;
+.chair-sit-right {
+  left: 50px;
+  -webkit-clip-path: polygon(35% 20%, 40% 18%, 44% 18%, 48% 18%, 51% 19%, 53% 22%, 54% 24%, 54% 28%, 54% 35%, 54% 43%, 54% 50%, 52% 60%, 46% 68%, 38% 73%, 29% 24%);
+          clip-path: polygon(35% 20%, 40% 18%, 44% 18%, 48% 18%, 51% 19%, 53% 22%, 54% 24%, 54% 28%, 54% 35%, 54% 43%, 54% 50%, 52% 60%, 46% 68%, 38% 73%, 29% 24%);
+  background-color: rgb(40, 35, 45);
+  position: absolute;
+  width: 140px;
+  height: 150px;
+  z-index: 9;
+  rotate: 8deg;
 }
 
-.chair-foot{
-    top: 90px;
-    left: 70px;
-    background-color: rgb(52, 40, 64);
-    position: absolute;
-    width: 12px;
-    height: 50px;
-    z-index: 4;
-    
+.chair-foot {
+  top: 90px;
+  left: 70px;
+  background-color: rgb(52, 40, 64);
+  position: absolute;
+  width: 12px;
+  height: 50px;
+  z-index: 4;
 }
 
-.chair-foot-round{
-    top: 136px;
-    left: 70px;
-    clip-path: ellipse(50% 34% at 50% 50%);
-    background-color: rgb(52, 40, 64);
-    position: absolute;
-    width: 12px;
-    height: 8px;
-    z-index: 2;
-    
+.chair-foot-round {
+  top: 136px;
+  left: 70px;
+  -webkit-clip-path: ellipse(50% 34% at 50% 50%);
+          clip-path: ellipse(50% 34% at 50% 50%);
+  background-color: rgb(52, 40, 64);
+  position: absolute;
+  width: 12px;
+  height: 8px;
+  z-index: 2;
 }
 
-.chair-base{
-    top: 118px;
-    left: 42px;
-    clip-path: ellipse(50% 34% at 50% 50%);
-    background-color: rgb(70, 60, 61);
-    position: absolute;
-    width: 65px;
-    height: 50px;
-    z-index: 1;
-    
-}
+.chair-base {
+  top: 118px;
+  left: 42px;
+  -webkit-clip-path: ellipse(50% 34% at 50% 50%);
+          clip-path: ellipse(50% 34% at 50% 50%);
+  background-color: rgb(70, 60, 61);
+  position: absolute;
+  width: 65px;
+  height: 50px;
+  z-index: 1;
+}/*# sourceMappingURL=AvatarDesk.css.map */

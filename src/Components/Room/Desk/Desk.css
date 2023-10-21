@@ -1,104 +1,105 @@
-.desk{
-    
-    margin-top: 334px;
-    margin-left:315px;
-    width: 269px;
-    height: 179px;
-    
-    position: absolute;
+.desk {
+  margin-top: 334px;
+  margin-left: 315px;
+  width: 269px;
+  height: 179px;
+  position: absolute;
 }
-
 .desk-base {
-    background-color: hsl(30, 33%, 40%);
-    position: absolute;
-    width: 270px;
-    height: 270px;
-    clip-path: polygon(0 28%, 0 30%, 31% 42%, 100% 15%, 100% 13%, 68% 0);
-    z-index: 2;
-    left: 0px;
-    top: 0px;
+  background-color: hsl(30, 33%, 40%);
+  position: absolute;
+  width: 270px;
+  height: 270px;
+  -webkit-clip-path: polygon(0 28%, 0 30%, 31% 42%, 100% 15%, 100% 13%, 68% 0);
+          clip-path: polygon(0 28%, 0 30%, 31% 42%, 100% 15%, 100% 13%, 68% 0);
+  z-index: 2;
+  left: 0px;
+  top: 0px;
 }
-
 .desk-top {
-    background-color: hsl(30, 34%, 52%);
-    position: absolute;
-    width: 270px;
-    height: 270px;
-    clip-path: polygon(0 28%, 68% 0, 100% 13%, 31% 40%);
-    z-index: 3;
-    left: 0px;
-    top: 0px;
+  background-color: hsl(30, 34%, 52%);
+  position: absolute;
+  width: 270px;
+  height: 270px;
+  -webkit-clip-path: polygon(0 28%, 68% 0, 100% 13%, 31% 40%);
+          clip-path: polygon(0 28%, 68% 0, 100% 13%, 31% 40%);
+  z-index: 3;
+  left: 0px;
+  top: 0px;
 }
 
-.foot{
-    position: absolute;
-    width: 10px;
-    height: 68px;
-    clip-path: polygon(19% 100%, 0 0, 100% 0, 81% 100%);
-    background-color: hsl(30, 34%, 52%);
-    z-index: 1;
+.foot {
+  position: absolute;
+  width: 10px;
+  height: 68px;
+  -webkit-clip-path: polygon(19% 100%, 0 0, 100% 0, 81% 100%);
+          clip-path: polygon(19% 100%, 0 0, 100% 0, 81% 100%);
+  background-color: hsl(30, 34%, 52%);
+  z-index: 1;
 }
 
-.corner-1{
-    top: 80px;
-    left: 5px;
+.corner-1 {
+  top: 80px;
+  left: 5px;
 }
 
-.corner-2{
-    top: 110px;
-    left: 78px;
+.corner-2 {
+  top: 110px;
+  left: 78px;
 }
 
-.corner-3{
-    left: 176px;
-    top: 12px;
+.corner-3 {
+  left: 176px;
+  top: 12px;
 }
 
-.corner-4{
-    left: 255px;
-    top: 42px;
-} 
-
-.foot .base{
-    clip-path: polygon(19% 100%, 0 0, 100% 0, 81% 100%);
-    background-color: hsl(0, 0%, 80%);
-    height: 10px;
-    width: 50px;
-    margin-left: -10px;
-    margin-top: -2px;
+.corner-4 {
+  left: 255px;
+  top: 42px;
 }
 
-.mouse{
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    left: 153px;
-    top: -1px;
-    z-index: 6;
-    background-color: black;
-    clip-path: polygon(23% 67%, 30% 73%, 35% 77%, 42% 79%, 50% 79%, 59% 80%, 65% 79%, 64% 71%, 61% 65%, 56% 61%, 52% 58%, 46% 56%, 40% 56%, 34% 57%, 28% 60%);
+.foot .base {
+  -webkit-clip-path: polygon(19% 100%, 0 0, 100% 0, 81% 100%);
+          clip-path: polygon(19% 100%, 0 0, 100% 0, 81% 100%);
+  background-color: hsl(0, 0%, 80%);
+  height: 10px;
+  width: 50px;
+  margin-left: -10px;
+  margin-top: -2px;
+}
+
+.mouse {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 153px;
+  top: -1px;
+  z-index: 6;
+  background-color: black;
+  -webkit-clip-path: polygon(23% 67%, 30% 73%, 35% 77%, 42% 79%, 50% 79%, 59% 80%, 65% 79%, 64% 71%, 61% 65%, 56% 61%, 52% 58%, 46% 56%, 40% 56%, 34% 57%, 28% 60%);
+          clip-path: polygon(23% 67%, 30% 73%, 35% 77%, 42% 79%, 50% 79%, 59% 80%, 65% 79%, 64% 71%, 61% 65%, 56% 61%, 52% 58%, 46% 56%, 40% 56%, 34% 57%, 28% 60%);
 }
 
 .keyboard-shadow {
-    background-color: rgb(7, 7, 7);
-    position: absolute;
-    top: 40px;
-    left: 90px; 
-    width: 80px;
-    height: 80px;
-    clip-path: polygon(0 28%, 0 30%, 31% 42%, 100% 15%, 100% 13%, 68% 0);
-    z-index: 4;
+  background-color: rgb(7, 7, 7);
+  position: absolute;
+  top: 40px;
+  left: 90px;
+  width: 80px;
+  height: 80px;
+  -webkit-clip-path: polygon(0 28%, 0 30%, 31% 42%, 100% 15%, 100% 13%, 68% 0);
+          clip-path: polygon(0 28%, 0 30%, 31% 42%, 100% 15%, 100% 13%, 68% 0);
+  z-index: 4;
 }
 
-.keyboard{
-    background-color: rgb(63, 58, 58);
-    position: absolute;
-    top: 40px;
-    left: 90px; 
-    width: 80px;
-    height: 80px;
-    clip-path: polygon(0 28%, 68% 0, 100% 13%, 31% 40%);
-    z-index: 5;
-}
-
-
+.keyboard {
+  background-color: rgb(63, 58, 58);
+  position: absolute;
+  top: 40px;
+  left: 90px;
+  width: 80px;
+  height: 80px;
+  -webkit-clip-path: polygon(0 28%, 68% 0, 100% 13%, 31% 40%);
+          clip-path: polygon(0 28%, 68% 0, 100% 13%, 31% 40%);
+  z-index: 5;
+}/*# sourceMappingURL=Desk.css.map */

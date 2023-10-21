@@ -1,0 +1,38 @@
+$facteur-de-reduction: 1.2
+    
+.window
+    position: absolute
+    width: 296px / $facteur-de-reduction
+    height: 374px / $facteur-de-reduction
+    clip-path: polygon(0 0, 100% 32%, 100% 87%, 0 54%)
+    background-color: rgb(218, 205, 205)
+    top: 161px / $facteur-de-reduction
+    left: 102px / $facteur-de-reduction
+    z-index: 2
+
+    &-shadow
+        position: absolute
+        width: 298px / $facteur-de-reduction
+        height: 378px / $facteur-de-reduction
+        clip-path: polygon(0% 3%, 2% 3%, 100% 34%, 100% 88%, 99% 89%, 0 54%)
+        background-color: rgb(145, 140, 140)
+        top: 150px / $facteur-de-reduction
+        left: 103px / $facteur-de-reduction
+
+.shadow-line-right
+    position: absolute
+    width: 2px
+    height: 48px / $facteur-de-reduction
+    background-color: rgb(145, 140, 140)
+    left: 134px / $facteur-de-reduction
+    top: 83px / $facteur-de-reduction
+    z-index: 1000
+
+.shadow-line-left
+    position: absolute
+    width: 2px
+    height: 148px / $facteur-de-reduction
+    background-color: rgb(145, 140, 140)
+    left: -84px / $facteur-de-reduction
+    top: 43px / $facteur-de-reduction
+    z-index: 999

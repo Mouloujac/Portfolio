@@ -25,7 +25,7 @@ function Room() {
       const roomWidth = (leftWidth + rightWidth);
       
       const marginLeft = (windowWidth - roomWidth) / 2;
-      
+      console.log(marginLeft);
       setRoomWidth(roomWidth);
       roomRef.current.style.marginLeft = `${marginLeft}px`;
     }
