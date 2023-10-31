@@ -25,8 +25,13 @@ function Room() {
       const roomWidth = (leftWidth + rightWidth);
       
       const marginLeft = (windowWidth - roomWidth) / 2;
-      console.log(marginLeft);
+      
+
+      console.log(windowWidth);
+      console.log(roomWidth)
+      console.log(marginLeft)
       setRoomWidth(roomWidth);
+      
       roomRef.current.style.marginLeft = `${marginLeft}px`;
     }
   };
@@ -56,14 +61,18 @@ function Room() {
         <div className='shadow-line-left'></div>
       </div>
       <div  ref={rightRef} id="right-wall-shadow"></div>
-      <MusicNotes />
+      {/* <MusicNotes />
       <Carpet />
-      <Avatar />
-      <Desk />
+      
+      
+      
+       */}
       <Screen />
       <Projects />
+      <Avatar />
+      <Desk />
       <div id="ground">
-        <Parquet />
+        {/* <Parquet /> */}
       </div>
       <div id="ground-shadow"></div>
     </div>

@@ -5,7 +5,7 @@ function Line2(){
     return (
         <>
             
-                <div className="line second">
+                <div className="line seconds">
                     <div className="latte light">
 
                     </div>

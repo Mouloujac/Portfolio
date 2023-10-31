@@ -1,105 +1,187 @@
 .desk {
-  margin-top: 334px;
-  margin-left: 315px;
-  width: 269px;
-  height: 179px;
   position: absolute;
+  margin-top: 135px;
+  margin-left: 118.5px;
+  width: 134.5px;
+  height: 89.5px;
+}
+@media screen and (min-width: 768px) {
+  .desk {
+    margin-top: 270px;
+    margin-left: 237px;
+    width: 269px;
+    height: 179px;
+  }
 }
 .desk-base {
   background-color: hsl(30, 33%, 40%);
   position: absolute;
-  width: 270px;
-  height: 270px;
+  width: 135px;
+  height: 135px;
   -webkit-clip-path: polygon(0 28%, 0 30%, 31% 42%, 100% 15%, 100% 13%, 68% 0);
           clip-path: polygon(0 28%, 0 30%, 31% 42%, 100% 15%, 100% 13%, 68% 0);
   z-index: 2;
-  left: 0px;
-  top: 0px;
+}
+@media screen and (min-width: 768px) {
+  .desk-base {
+    width: 270px;
+    height: 270px;
+    left: 0px;
+    top: 0px;
+  }
 }
 .desk-top {
   background-color: hsl(30, 34%, 52%);
   position: absolute;
-  width: 270px;
-  height: 270px;
+  width: 135px;
+  height: 135px;
   -webkit-clip-path: polygon(0 28%, 68% 0, 100% 13%, 31% 40%);
           clip-path: polygon(0 28%, 68% 0, 100% 13%, 31% 40%);
   z-index: 3;
-  left: 0px;
-  top: 0px;
+}
+@media screen and (min-width: 768px) {
+  .desk-top {
+    width: 270px;
+    height: 270px;
+    left: 0px;
+    top: 0px;
+  }
 }
 
 .foot {
   position: absolute;
-  width: 10px;
-  height: 68px;
+  width: 5px;
+  height: 34px;
   -webkit-clip-path: polygon(19% 100%, 0 0, 100% 0, 81% 100%);
           clip-path: polygon(19% 100%, 0 0, 100% 0, 81% 100%);
   background-color: hsl(30, 34%, 52%);
   z-index: 1;
 }
+@media screen and (min-width: 768px) {
+  .foot {
+    width: 10px;
+    height: 68px;
+  }
+}
 
 .corner-1 {
-  top: 80px;
-  left: 5px;
+  top: 40px;
+  left: 2.5px;
+}
+@media screen and (min-width: 768px) {
+  .corner-1 {
+    top: 80px;
+    left: 5px;
+  }
 }
 
 .corner-2 {
-  top: 110px;
-  left: 78px;
+  top: 55px;
+  left: 39px;
+}
+@media screen and (min-width: 768px) {
+  .corner-2 {
+    top: 110px;
+    left: 78px;
+  }
 }
 
 .corner-3 {
-  left: 176px;
-  top: 12px;
+  left: 88px;
+  top: 6px;
+}
+@media screen and (min-width: 768px) {
+  .corner-3 {
+    top: 40px;
+    left: 255px;
+  }
 }
 
 .corner-4 {
-  left: 255px;
-  top: 42px;
+  left: 127.5px;
+  top: 21px;
+}
+@media screen and (min-width: 768px) {
+  .corner-4 {
+    top: 10px;
+    left: 178px;
+  }
 }
 
 .foot .base {
   -webkit-clip-path: polygon(19% 100%, 0 0, 100% 0, 81% 100%);
           clip-path: polygon(19% 100%, 0 0, 100% 0, 81% 100%);
   background-color: hsl(0, 0%, 80%);
-  height: 10px;
-  width: 50px;
+  height: 5px;
+  width: 25px;
   margin-left: -10px;
   margin-top: -2px;
+}
+@media screen and (min-width: 768px) {
+  .foot .base {
+    height: 10px;
+    width: 50px;
+    margin-left: -10px;
+    margin-top: -2px;
+  }
 }
 
 .mouse {
   position: absolute;
-  width: 60px;
-  height: 60px;
-  left: 153px;
+  width: 30px;
+  height: 30px;
+  left: 76.5px;
   top: -1px;
   z-index: 6;
   background-color: black;
   -webkit-clip-path: polygon(23% 67%, 30% 73%, 35% 77%, 42% 79%, 50% 79%, 59% 80%, 65% 79%, 64% 71%, 61% 65%, 56% 61%, 52% 58%, 46% 56%, 40% 56%, 34% 57%, 28% 60%);
           clip-path: polygon(23% 67%, 30% 73%, 35% 77%, 42% 79%, 50% 79%, 59% 80%, 65% 79%, 64% 71%, 61% 65%, 56% 61%, 52% 58%, 46% 56%, 40% 56%, 34% 57%, 28% 60%);
 }
+@media screen and (min-width: 768px) {
+  .mouse {
+    width: 60px;
+    height: 60px;
+    left: 153px;
+    top: -1px;
+  }
+}
 
 .keyboard-shadow {
   background-color: rgb(7, 7, 7);
   position: absolute;
-  top: 40px;
-  left: 90px;
-  width: 80px;
-  height: 80px;
+  top: 20px;
+  left: 45px;
+  width: 40px;
+  height: 40px;
   -webkit-clip-path: polygon(0 28%, 0 30%, 31% 42%, 100% 15%, 100% 13%, 68% 0);
           clip-path: polygon(0 28%, 0 30%, 31% 42%, 100% 15%, 100% 13%, 68% 0);
   z-index: 4;
+}
+@media screen and (min-width: 768px) {
+  .keyboard-shadow {
+    top: 40px;
+    left: 90px;
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .keyboard {
   background-color: rgb(63, 58, 58);
   position: absolute;
-  top: 40px;
-  left: 90px;
-  width: 80px;
-  height: 80px;
+  top: 20px;
+  left: 45px;
+  width: 40px;
+  height: 40px;
   -webkit-clip-path: polygon(0 28%, 68% 0, 100% 13%, 31% 40%);
           clip-path: polygon(0 28%, 68% 0, 100% 13%, 31% 40%);
   z-index: 5;
+}
+@media screen and (min-width: 768px) {
+  .keyboard {
+    top: 40px;
+    left: 90px;
+    width: 80px;
+    height: 80px;
+  }
 }/*# sourceMappingURL=Desk.css.map */

@@ -5,6 +5,8 @@
   
 }
 
+
+
 .title{
   padding-top: 2rem;
   padding: 1rem;
@@ -13,9 +15,7 @@
   text-transform: capitalize;
 }
 
-.icons{
-  width: 70px;
-}
+
 
 .resume{
   font-size: 1rem;

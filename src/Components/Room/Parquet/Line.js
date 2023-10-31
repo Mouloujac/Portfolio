@@ -5,7 +5,7 @@ function Line(){
     return (
         <>
             
-                <div className="line first">
+                <div className="line firsts">
                     <div className="latte light">
 
                     </div>

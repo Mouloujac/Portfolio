@@ -1,16 +1,27 @@
 .screen {
   position: absolute;
-  margin-top: 165px;
-  margin-left: 338px;
+  margin-top: 50px;
+  margin-left: 129px;
+}
+@media screen and (min-width: 768px) {
+  .screen {
+    margin-top: 100px;
+    margin-left: 258px;
+  }
 }
 .screen-left {
   position: absolute;
-  top: 60px;
+  top: 30px;
+}
+@media screen and (min-width: 768px) {
+  .screen-left {
+    top: 60px;
+  }
 }
 .screen-left-back {
-  top: 11px;
-  width: 130px;
-  height: 170px;
+  top: 5.5px;
+  width: 65px;
+  height: 85px;
   position: absolute;
   -webkit-clip-path: polygon(0% 50%, 54% 28%, 58% 29%, 58% 66%, 4% 93%, 0 92%);
           clip-path: polygon(0% 50%, 54% 28%, 58% 29%, 58% 66%, 4% 93%, 0 92%);
@@ -18,80 +29,146 @@
   overflow: visible;
   z-index: 3;
 }
+@media screen and (min-width: 768px) {
+  .screen-left-back {
+    top: 11px;
+    width: 130px;
+    height: 170px;
+  }
+}
 .screen-left-front {
-  left: 5px;
+  left: 2.5px;
   position: absolute;
-  width: 130px;
-  height: 170px;
+  width: 65px;
+  height: 85px;
   overflow: visible;
   -webkit-clip-path: polygon(0 58%, 54% 35%, 54% 77%, 0% 100%);
           clip-path: polygon(0 58%, 54% 35%, 54% 77%, 0% 100%);
   background-color: rgb(25, 24, 24);
   z-index: 5;
 }
+@media screen and (min-width: 768px) {
+  .screen-left-front {
+    left: 5px;
+    width: 130px;
+    height: 170px;
+  }
+}
 .screen-left-border {
-  width: 110px;
-  height: 140px;
+  width: 55px;
+  height: 70px;
+  margin: 3px;
+  margin-top: 10px;
   -webkit-clip-path: polygon(0 58%, 54% 35%, 54% 77%, 0% 100%);
           clip-path: polygon(0 58%, 54% 35%, 54% 77%, 0% 100%);
   background-color: rgb(106, 94, 94);
-  margin: 6px;
-  margin-top: 20px;
   z-index: 5;
+}
+@media screen and (min-width: 768px) {
+  .screen-left-border {
+    width: 110px;
+    height: 140px;
+    margin: 6px;
+    margin-top: 20px;
+  }
 }
 .screen-right {
   position: absolute;
-  left: 80px;
+  left: 40px;
+}
+@media screen and (min-width: 768px) {
+  .screen-right {
+    left: 80px;
+  }
 }
 .screen-right-back {
   position: absolute;
-  width: 160px;
-  height: 200px;
+  width: 80px;
+  height: 100px;
   background-color: rgb(2, 2, 2);
   -webkit-clip-path: polygon(0 58%, 53% 48%, 56% 50%, 56% 80%, 3% 93%, 0 91%);
           clip-path: polygon(0 58%, 53% 48%, 56% 50%, 56% 80%, 3% 93%, 0 91%);
   z-index: 4;
 }
+@media screen and (min-width: 768px) {
+  .screen-right-back {
+    width: 160px;
+    height: 200px;
+  }
+}
 .screen-right-front {
-  top: 4px;
-  left: 4px;
+  top: 2px;
+  left: 2px;
   position: absolute;
-  width: 162px;
-  height: 200px;
+  width: 81px;
+  height: 100px;
   background-color: rgb(28, 28, 28);
   -webkit-clip-path: polygon(0 58%, 53% 48%, 53% 81%, 0 91%);
           clip-path: polygon(0 58%, 53% 48%, 53% 81%, 0 91%);
   z-index: 5;
 }
+@media screen and (min-width: 768px) {
+  .screen-right-front {
+    top: 4px;
+    left: 4px;
+    position: absolute;
+    width: 162px;
+    height: 200px;
+  }
+}
 .screen-right-border {
-  width: 142px;
-  height: 170px;
+  width: 71px;
+  height: 85px;
+  margin-top: 10px;
+  margin-left: 2.5px;
   -webkit-clip-path: polygon(0 58%, 53% 48%, 53% 81%, 0 91%);
           clip-path: polygon(0 58%, 53% 48%, 53% 81%, 0 91%);
   background-color: rgb(106, 94, 94);
   z-index: 4;
-  margin-top: 20px;
-  margin-left: 5px;
+}
+@media screen and (min-width: 768px) {
+  .screen-right-border {
+    width: 142px;
+    height: 170px;
+    margin-top: 20px;
+    margin-left: 5px;
+  }
 }
 .screen-foot {
-  margin-top: 137px;
-  left: 68px;
-  width: 50px;
-  height: 70px;
+  margin-top: 68.5px;
+  left: 34px;
+  width: 25px;
+  height: 35px;
   z-index: 4;
   background-color: black;
   position: absolute;
   -webkit-clip-path: polygon(40% 0, 40% 85%, 55% 90%, 23% 100%, 0 85%, 0 0);
           clip-path: polygon(40% 0, 40% 85%, 55% 90%, 23% 100%, 0 85%, 0 0);
 }
+@media screen and (min-width: 768px) {
+  .screen-foot {
+    margin-top: 137px;
+    left: 68px;
+    width: 50px;
+    height: 70px;
+  }
+}
 .screen-foot-shadow {
-  margin-top: 147px;
-  left: 68px;
-  width: 50px;
-  height: 70px;
+  margin-top: 73.5px;
+  left: 34px;
+  width: 25px;
+  height: 35px;
   z-index: 2;
   background-color: black;
   position: absolute;
   -webkit-clip-path: polygon(40% 0, 40% 85%, 55% 90%, 23% 100%, 0 85%, 0 0);
           clip-path: polygon(40% 0, 40% 85%, 55% 90%, 23% 100%, 0 85%, 0 0);
+}
+@media screen and (min-width: 768px) {
+  .screen-foot-shadow {
+    margin-top: 147px;
+    left: 68px;
+    width: 50px;
+    height: 70px;
+  }
 }/*# sourceMappingURL=Screen.css.map */

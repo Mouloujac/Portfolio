@@ -1,92 +1,161 @@
-$facteur-de-reduction: 1.2
+$desktop-screen: 768px
 
-.room
-  margin-top: 50px
+.room 
+  margin-top: 100px
+  margin-left: 50px
+  @media screen and (min-width: $desktop-screen) 
+    margin-top: 50px
 
-#ground
+
+#ground 
   position: absolute
-  width: 827.3333333333px
-  height: 333.3333333333px
   clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%)
   background-color: rgb(167, 140, 81)
-  margin-left: 4px
-  margin-top: 335px
+  width: 413px
+  height: 166px
+  margin-top: 168px
+  margin-left: 2px
+  @media screen and (min-width: $desktop-screen) 
+    width: 827px
+    height: 333px
+    margin-left: 4px
+    margin-top: 335px
+  
 
-  &-shadow
+  &-shadow 
     position: absolute
-    width: 834.1666666667px
-    height: 333.3333333333px
     clip-path: polygon(0% 50%, 50% 100%, 100% 50%, 100% 37%, 0% 37%)
     background-color: rgb(20, 20, 20)
-    margin-left: 0px
-    margin-top: 375px
     z-index: -1
+    width: 417px
+    height: 166px
+    margin-top: 187px
+    margin-left: 0px
+    @media screen and (min-width: $desktop-screen) 
+      width: 834px
+      height: 333px
+      margin-left: 0px
+      margin-top: 375px
+    
+  
 
-#left-wall
+
+#left-wall 
   position: absolute
-  width: 414.1666666667px
-  height: 500px
   clip-path: polygon(0 30%, 100% 0%, 100% 70%, 0 100%)
   background-color: rgb(245, 237, 219)
-  margin-left: 4px
-  margin-top: 02px
+  width: 207px
+  height: 250px
+  margin-left: 2px
+  margin-top: 1px
 
-  &-shadow
-    position: absolute
-    width: 416.6666666667px
+  @media screen and (min-width: $desktop-screen) 
+    width: 414px
     height: 500px
+    margin-left: 4px
+    margin-top: 2px
+  
+
+  &-shadow 
+    position: absolute
     clip-path: polygon(0 30%, 100% 0%, 100% 70%, 0 100%)
     background-color: rgb(5, 5, 5)
-    margin-left: 0px
-    margin-top: 0px
     z-index: -1
+    width: 208px
+    height: 250px
+    @media screen and (min-width: $desktop-screen) 
+      width: 416px
+      height: 500px
+      margin-left: 0px
+      margin-top: 0px
+    
+  
 
-#right-wall
+
+#right-wall 
   position: absolute
-  width: 414.1666666667px
-  height: 500px
   border-left: rgba(0, 0, 0, 0.153) solid 1px
-  clip-path: polygon(0 0,0 100%, 25% 100%, 25% 34%, 75% 50%, 75% 75%, 25% 58%, 25% 100%, 100% 100%, 100% 30%)
+  clip-path: polygon(0 0, 0 100%, 25% 100%, 25% 34%, 75% 50%, 75% 75%, 25% 58%, 25% 100%, 100% 100%, 100% 30%)
   background-color: rgb(245, 237, 219)
-  margin-left: 416.6666666667px
-  margin-top: 2px
   overflow: hidden
+  width: 207px
+  height: 250px
+  margin-left: 208px
+  margin-top: 1px
 
-  &-shadow
+  @media screen and (min-width: $desktop-screen) 
+    width: 414px
+    height: 500px
+    margin-left: 416px
+    margin-top: 2px
+  
+
+  &-shadow 
     position: absolute
-    width: 416.6666666667px
+    width: 416px
     height: 500px
     border-left: rgba(0, 0, 0, 0.153) solid 1px
     clip-path: polygon(0 0, 0 100%, 25% 100%, 25% 34%, 75% 50%, 75% 75%, 25% 58%, 25% 100%, 100% 100%, 100% 30%)
     background-color: rgb(0, 0, 0)
-    margin-left: 417px
+    width: 207px
+    height: 250px
+    margin-left: 208.5px
     margin-top: 0px
     overflow: hidden
     z-index: -1
+    @media screen and (min-width: $desktop-screen) 
+      width: 417px
+      height: 502px
+      margin-left: 416px
+      margin-top: 0px
+  
+  
 
-.window-middle
+
+.window-middle 
   position: absolute
-  width: 116.6666666667px
-  height: 180px
   clip-path: polygon(25% 0, 47% 6%, 47% 100%, 25% 94%)
-  margin-left: 582px 
-  margin-top: 179px
   background-color: rgb(218, 205, 205)
   z-index: 0
+  width: 58px
+  height: 90px 
+  margin-left: 291px
+  margin-top: 91.5px
+  
 
-.middle-line
+  @media screen and (min-width: $desktop-screen) 
+    width: 116px
+    height: 180px 
+    margin-left: 582px
+    margin-top: 179px
+  
+
+
+.middle-line 
   position: absolute
-  width: 1px
-  height: 100%
   background-color: rgb(145, 140, 140)
-  left: 40.8333333333px
+  width: 0.5px
+  height: 100%
+  left: 20px
+  
+  @media screen and (min-width: $desktop-screen) 
+    width: 1px
+    height: 100%
+    left: 40px
 
-.handle
+
+.handle 
   position: absolute
-  width: 50px
-  height: 80px
   border-radius: 5px
   clip-path: polygon(55% 23%, 40% 19%, 40% 63%, 48% 65%, 48% 32%, 55% 34%)
   background-color: black
-  left: 25px
-  top: 87.5px
+  width: 25px
+  height: 40px
+  left: 12.5px
+  top: 43px
+  @media screen and (min-width: $desktop-screen) 
+    width: 50px
+    height: 80px
+    left: 25px
+    top: 87.5px
+

@@ -14,7 +14,7 @@ function Polaroid(props) {
       <div className="scotch down"></div>
       {props.isExpanded && (
         <>
-        <div className="close" ></div>
+        {/* <div className="close" ></div> */}
         {showText && (
         <div className="polaroid-text">
           <div className="technos">
