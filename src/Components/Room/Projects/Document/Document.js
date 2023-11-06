@@ -8,30 +8,33 @@ function Document(props) {
 
   return (
     <>
-      <img id="paper-clip" src={`${props.isExpanded ? './paper-clip.svg' : ''}`}></img>
-      <img id="paper-clip-shadow" src={`${props.isExpanded ? './paper-clip-shadow.svg' : ''}`}></img>
-
       <div className='document-base' id="documentFirst">
             
       </div>
-      <div id="modal-container" className={`${props.isExpanded ? 'firstModal' : ''}`}>
+      <div id="modal-container" className={`${props.isExpanded ? 'firstModal' : 'out'}`}>
         <div class="modal-background">
           <div class="modal">
             <div className="description">
-              <h2>Projet de fin d'études</h2>
-              <h2>Site e-commerce</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit sed turpis non iaculis. Praesent efficitur ante in turpis tincidunt volutpat. Quisque sit amet augue congue, laoreet odio eget, rutrum ex. Vivamus commodo malesuada ligula vel condimentum. Sed imperdiet rutrum sapien ac aliquet. Nam eu lacus sem.</p>
-              <div className="technos">
-                <img className="icons" src="react.svg"></img>
-                <img className="icons" src="laravel.svg"></img>
-                <img className="icons" src="css.svg"></img>
+              <div className="imgContainer">
+                <img src="./Proto-site.png" className="imgProject"></img>
               </div>
-              <a>Lien Github</a>
+              <h2 className="projectType">Projet de fin d'études</h2>
+              <h2 className="projectTitle">Site e-commerce</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit sed turpis non iaculis. Praesent efficitur ante in turpis tincidunt volutpat. Quisque sit amet augue congue, laoreet odio eget, rutrum ex. Vivamus commodo malesuada ligula vel condimentum. Sed imperdiet rutrum sapien ac aliquet. Nam eu lacus sem.</p>
+              
             </div>
-          </div>
+            <div className="technos">
+              <img className="icons" src="react.svg"></img>
+              <img className="icons" src="laravel.svg"></img>
+              <img className="icons" src="css.svg"></img>
+            </div>
+            <a className="link">Lien Github</a> 
+            
+        </div>
+        
           
-          
-        </div>        
+        </div>    
+           
       </div>
       <div className="document-corner"></div>
 
