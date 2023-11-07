@@ -28,14 +28,6 @@
     opacity: 0;
   }
 }
-@keyframes fadeToRed {
-  0% {
-    background-color: rgba(0, 0, 0, 0.6);
-  }
-  100% {
-    background-color: rgba(255, 0, 0, 0.8);
-  }
-}
 @keyframes slowFade {
   0% {
     opacity: 1;
@@ -414,7 +406,6 @@
 }
 #modal-container.out .modal-background {
   background-color: rgba(0, 0, 0, 0.7);
-  animation: fadeToRed 2s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 #modal-container.out .modal-background .modal {
   border-radius: 3px;
