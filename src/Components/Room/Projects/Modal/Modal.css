@@ -133,21 +133,16 @@
 .description {
   margin-top: -60px;
   z-index: 12;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
 }
 
 .description p {
-  display: flex;
-  justify-content: center;
   margin-left: 30px;
   margin-top: 40px;
   margin-right: 12.5px;
 }
 @media screen and (min-width: 768px) {
   .description p {
-    margin-left: 15px;
+    margin-left: 300px;
     margin-top: 80px;
     margin-right: 25px;
   }
@@ -234,10 +229,7 @@
 }
 @media screen and (min-width: 768px) {
   .icons {
-    width: 60px;
-    background-color: white;
-    border-radius: 50%;
-    padding: 5px;
+    width: 70px;
   }
 }
 
@@ -351,9 +343,8 @@
 }
 @media screen and (min-width: 768px) {
   #modal-container.firstModal .modal-background .modal .technos {
-    flex-direction: column;
-    margin-top: -450px;
-    margin-left: 315px;
+    margin-top: 110px;
+    margin-left: 5px;
   }
 }
 #modal-container.firstModal .modal-background .modal .link {
@@ -371,8 +362,8 @@
 }
 @media screen and (min-width: 768px) {
   #modal-container.firstModal .modal-background .modal .link {
-    margin-top: 0px;
-    margin-left: 50px;
+    margin-top: 110px;
+    margin-left: 5px;
   }
 }
 #modal-container.firstModal .modal-background .modal .description {
@@ -405,6 +396,9 @@
 }
 #modal-container.firstModal .modal-background .modal .description .projectTitle {
   margin-top: 55px;
+}
+#modal-container.firstModal .modal-background .modal .description p {
+  content: "coucoucoucoucou";
 }
 #modal-container.out .modal-background {
   background: rgba(255, 255, 255, 0.41);
@@ -692,4 +686,4 @@
     margin-top: 20px;
     margin-left: 14px;
   }
-}/*# sourceMappingURL=Document.css.map */
+}/*# sourceMappingURL=Modal.css.map */

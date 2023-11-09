@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import Polaroid from "./Polaroid";
+import Modal from "../Modal/Modal";
 import "./Document.css"
 
 function DocumentThird(props) {
@@ -16,6 +17,7 @@ function DocumentThird(props) {
             </div>
         </div>
         <Polaroid id="project-3" />
+        
     </>
   );
 }

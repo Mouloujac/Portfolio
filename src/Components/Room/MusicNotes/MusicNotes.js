@@ -4,17 +4,17 @@ import "./MusicNotes.css";
 
 function MusicNotes (){
     return(
-        <div class="muzieknootjes">
-        <div class="noot-1">
+        <div className="muzieknootjes">
+        <div className="noot-1">
         &#9835; &#9833;
         </div>
-        <div class="noot-2">
+        <div className="noot-2">
         &#9833;
         </div>
-        <div class="noot-3">
+        <div className="noot-3">
         &#9839; &#9834;
         </div>
-        <div class="noot-4">
+        <div className="noot-4">
         &#9834;
         </div>
         </div>

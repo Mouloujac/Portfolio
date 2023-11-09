@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import Polaroid from "./Polaroid";
+import Modal from "../Modal/Modal";
 import "./Document.css"
 
 function DocumentSecond(props) {
@@ -18,6 +19,7 @@ function DocumentSecond(props) {
             </div>
         </div>
         <Polaroid id="project-2" /> 
+        
     </>
   );
 }
