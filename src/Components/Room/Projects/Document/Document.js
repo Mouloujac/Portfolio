@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+
 import Polaroid from "./Polaroid";
 import Thumbtack from "../Thumbtack/Thumbtack";
-import Modal from "../Modal/Modal";
+
 import "./Document.css";
 
 function Document(props) {

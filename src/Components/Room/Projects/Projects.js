@@ -18,7 +18,7 @@ function Projects (){
         console.log(Data.projects);
         
         
-        if(isExpanded == false){
+        if(isExpanded === false){
             setIsExpanded(!isExpanded);
             
             

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-import data from "../../../../Data/Projects.json"
 import "./Modal.css";
 
 function Modal(props) {
@@ -21,7 +20,7 @@ function Modal(props) {
             <div className="modal" onClick={props.onClick}>
                 <div className="description">
                     <div className="imgContainer">
-                        <img src="./Proto-site.png" className="imgProject"></img>
+                        <img src="./Proto-site.png" className="imgProject" alt="icons"></img>
                     </div>
                     <h2 className="projectType">Projet de fin d'études..</h2>
                     <h2 className="projectTitle">{title}</h2>
@@ -29,11 +28,11 @@ function Modal(props) {
                     
                 </div>
                     <div className="technos">
-                        <img className="icons" src="react.svg"></img>
-                        <img className="icons" src="laravel.svg"></img>
-                        <img className="icons" src="css.svg"></img>
+                        <img className="icons" src="react.svg" alt="icons"></img>
+                        <img className="icons" src="laravel.svg" alt="icons"></img>
+                        <img className="icons" src="css.svg" alt="icons"></img>
                     </div>
-                    <a className="link">Lien Github</a> 
+                    <a className="link" href="">Lien Github</a> 
                 
                 </div>
         

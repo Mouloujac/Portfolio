@@ -11,7 +11,7 @@ function AvatarDesk (){
                 <div className='music-head'></div>
                 <div className='music-ears'></div>
                 <div className='music-ears-center'>
-                    <img src='react.svg' id="reactLogo"></img>
+                    <img src='react.svg' id="reactLogo" alt="react logo"></img>
                 </div>
                 <div className='hat'></div>
                 <div className='hat-front-line'></div>                

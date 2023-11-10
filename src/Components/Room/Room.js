@@ -2,12 +2,10 @@ import React, { useEffect, useRef, useState } from 'react';
 import './Room.css'; // Assurez-vous d'importer votre fichier CSS
 import Window from './Window/Window';
 import Desk from './Desk/Desk';
-import Avatar from './AvatarDesk/AvatarDesk';
-import Parquet from './Parquet/Parquet';
+import Avatar from './AvatarDesk/AvatarDesk'
 import Screen from './Screen/Screen';
 import Projects from './Projects/Projects';
-import Carpet from './Carpet/Carpet';
-import MusicNotes from './MusicNotes/MusicNotes';
+
 
 function Room() {
   const leftRef = useRef(null);

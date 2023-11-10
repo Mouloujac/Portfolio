@@ -1,7 +1,5 @@
 import React from 'react'
 
-import AvatarDesk from "../AvatarDesk/AvatarDesk"
-import Screen from '../Screen/Screen';
 import "./Desk.css"
 
 
