@@ -41,7 +41,7 @@ function Room() {
     return () => {
       window.removeEventListener('resize', centerRoom);
     };
-  }, []);
+  }, [centerRoom]);
 
   return (
     <div ref={roomRef} className='room'>
