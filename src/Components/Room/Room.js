@@ -22,7 +22,7 @@ function Room() {
       
       setRoomWidth(totalWidth);
 
-      const marginLeft = (windowWidth - totalWidth) / 2;
+      const marginLeft = (windowWidth - roomWidth) / 2;
       roomRef.current.style.marginLeft = `${marginLeft}px`;
     }
   };
