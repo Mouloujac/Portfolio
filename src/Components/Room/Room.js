@@ -20,7 +20,7 @@ function Room() {
       
       const leftWidth = leftRef.current.offsetWidth;
       const rightWidth = rightRef.current.offsetWidth;
-      const roomWidth = (leftWidth + rightWidth);
+      setRoomWidth(leftWidth + rightWidth);
       
       const marginLeft = (windowWidth - roomWidth) / 2;
       

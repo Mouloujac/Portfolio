@@ -32,7 +32,7 @@ function Modal(props) {
                         <img className="icons" src="laravel.svg" alt="icons"></img>
                         <img className="icons" src="css.svg" alt="icons"></img>
                     </div>
-                    <a className="link" href="">Lien Github</a> 
+                    <a className="link" href="google.com">Lien Github</a> 
                 
                 </div>
         

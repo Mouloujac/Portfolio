@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React  from "react";
 import "./Document.css"
 
 function Polaroid(props) {
@@ -20,7 +20,7 @@ function Polaroid(props) {
             <div className="resume">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sollicitudin suscipit dictum. Vivamus nec nulla eros. Proin blandit lacus in ipsum iaculis, vel convallis ex dictum. Morbi vel odio a velit gravida eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sollicitudin suscipit dictum. Vivamus nec nulla eros. Proin blandit lacus in ipsum iaculis, vel convallis ex dictum. Morbi vel odio a velit gravida eleifend</p>
             </div>
-            <a className="link" href="">Lien vers github</a>
+            <a className="link" href="google.com">Lien vers github</a>
         </div>
         </>
       )}

@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
 import Polaroid from "./Polaroid";
-import Modal from "../Modal/Modal";
 import "./Document.css"
 
 function DocumentThird(props) {
