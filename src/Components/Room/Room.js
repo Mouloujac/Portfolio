@@ -1,12 +1,3 @@
-import React, { useEffect, useRef, useState } from 'react';
-import './Room.css'; // Assurez-vous d'importer votre fichier CSS
-import Window from './Window/Window';
-import Desk from './Desk/Desk';
-import Avatar from './AvatarDesk/AvatarDesk'
-import Screen from './Screen/Screen';
-import Projects from './Projects/Projects';
-
-
 function Room() {
   const leftRef = useRef(null);
   const rightRef = useRef(null);
@@ -17,19 +8,13 @@ function Room() {
   const centerRoom = () => {
     if (roomRef.current) {
       const windowWidth = window.innerWidth;
-      
       const leftWidth = leftRef.current.offsetWidth;
       const rightWidth = rightRef.current.offsetWidth;
-      setRoomWidth(leftWidth + rightWidth);
+      const totalWidth = leftWidth + rightWidth;
       
-      const marginLeft = (windowWidth - roomWidth) / 2;
-      
+      setRoomWidth(totalWidth);
 
-      console.log(windowWidth);
-      console.log(roomWidth)
-      console.log(marginLeft)
-      setRoomWidth(roomWidth);
-      
+      const marginLeft = (windowWidth - totalWidth) / 2;
       roomRef.current.style.marginLeft = `${marginLeft}px`;
     }
   };
@@ -41,14 +26,12 @@ function Room() {
     return () => {
       window.removeEventListener('resize', centerRoom);
     };
-  }, [centerRoom]);
+  }, []);
 
   return (
     <div ref={roomRef} className='room'>
-      <div id="left-wall">
-        
-      </div>
-      <div  ref={leftRef} id="left-wall-shadow"></div>
+      <div id="left-wall"></div>
+      <div ref={leftRef} id="left-wall-shadow"></div>
       <div id="right-wall">
         <Window />
       </div>
@@ -58,20 +41,12 @@ function Room() {
         <div className='shadow-line-right'></div>
         <div className='shadow-line-left'></div>
       </div>
-      <div  ref={rightRef} id="right-wall-shadow"></div>
-      {/* <MusicNotes />
-      <Carpet />
-      
-      
-      
-       */}
+      <div ref={rightRef} id="right-wall-shadow"></div>
       <Screen />
       <Projects />
       <Avatar />
       <Desk />
-      <div id="ground">
-        {/* <Parquet /> */}
-      </div>
+      <div id="ground"></div>
       <div id="ground-shadow"></div>
     </div>
   );
