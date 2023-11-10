@@ -23,7 +23,7 @@ function Modal(props) {
                     <div className="imgContainer">
                         <img src="./Proto-site.png" className="imgProject"></img>
                     </div>
-                    <h2 className="projectType">Projet de fin d'études</h2>
+                    <h2 className="projectType">Projet de fin d'études.</h2>
                     <h2 className="projectTitle">{title}</h2>
                     <p>{content}</p>
                     
