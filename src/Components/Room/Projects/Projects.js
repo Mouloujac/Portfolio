@@ -14,9 +14,6 @@ function Projects (){
     
 
     const handleDocumentClick = (projectId) => {
-        console.log(projectId);
-        console.log(Data.projects);
-        
         
         if(isExpanded === false){
             setIsExpanded(!isExpanded);
@@ -42,15 +39,21 @@ function Projects (){
                 <div className="shadow-down"></div>
                 <div className="shadow-up"></div>
                 <div className="shadow-left"></div>
-                <div className="project first" onClick={() => handleDocumentClick(1)}>
+                <div className="project first" >
                     <Document  isExpanded={isExpanded} />
                 </div>
-                <div className="project second" onClick={() => handleDocumentClick(2)}>
+                <div className="firstShadow" onClick={() => handleDocumentClick(1)}></div>
+                <div className="firstShadowBack"></div>
+                <div className="project second">
                     <DocumentSecond />
                 </div>
-                <div className="project third" onClick={() => handleDocumentClick(3)}>
+                <div className="secondShadow" onClick={() => handleDocumentClick(2)}></div>
+                <div className="secondShadowBack"></div>
+                <div className="project third">
                     <DocumentThird />  
                 </div>
+                <div className="thirdShadow" onClick={() => handleDocumentClick(3)}></div>
+                <div className="thirdShadowBack"></div>
             </div>
             <Modal isExpanded={isExpanded} onClick={handleDocumentClick} selectedProject={selectedProject}/>
 
