@@ -5,6 +5,7 @@ import Desk from './Desk/Desk';
 import Avatar from './AvatarDesk/AvatarDesk'
 import Screen from './Screen/Screen';
 import Projects from './Projects/Projects';
+import Carpet from './Carpet/Carpet';
 
 function Room() {
   const leftRef = useRef(null);
@@ -55,6 +56,7 @@ function Room() {
       <Avatar />
       <Desk />
       <div id="ground"></div>
+      <Carpet />
       <div id="ground-shadow"></div>
     </div>
   );
