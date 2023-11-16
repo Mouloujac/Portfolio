@@ -179,4 +179,19 @@
     left: 25px;
     top: 87.5px;
   }
+}
+
+.cat {
+  position: absolute;
+  display: none;
+  margin-top: 490px;
+  margin-left: 200px;
+  width: 145px;
+  height: 72px;
+  z-index: 13;
+}
+@media screen and (min-width: 768px) {
+  .cat {
+    display: block;
+  }
 }/*# sourceMappingURL=Room.css.map */

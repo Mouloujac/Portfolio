@@ -56,6 +56,7 @@ function Room() {
       <Avatar />
       <Desk />
       <div id="ground"></div>
+      <img src='/cat.svg' className='cat'></img>
       <Carpet />
       <div id="ground-shadow"></div>
     </div>

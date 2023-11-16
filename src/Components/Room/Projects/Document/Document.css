@@ -440,9 +440,9 @@
   width: 150px;
   height: 150px;
   position: absolute;
-  margin-top: 55px;
+  margin-top: 54px;
   margin-left: 68px;
-  rotate: -3deg;
+  rotate: -3.5deg;
   z-index: 4;
   animation-name: paper;
   animation-iteration-count: infinite;
@@ -451,10 +451,11 @@
 @media screen and (min-width: 768px) {
   .document-corner {
     width: 300px;
-    height: 300px;
+    height: 290px;
     position: absolute;
     margin-top: 110px;
     margin-left: 136px;
+    rotate: -4deg;
   }
 }
 

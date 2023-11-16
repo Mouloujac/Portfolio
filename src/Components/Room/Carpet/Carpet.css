@@ -9,6 +9,7 @@
           clip-path: polygon(0 68%, 66% 68%, 99% 100%, 34% 100%);
   background-color: #94815d;
   opacity: 0.8;
+  display: none;
 }
 
 .carpet-motifmister {
