@@ -3,267 +3,6 @@ $dash-size: 5px
 $theme-color: mediumseagreen
 $color-alpha: #b78846
 
-@keyframes modalContentFadeIn 
-    0% 
-        opacity: 0
-        top: -20px
-    
-    100% 
-        opacity: 1
-        top: 0
-  
-
-
-@keyframes modalContentFadeOut 
-    0% 
-        opacity: 1
-        top: 0px
-
-    100% 
-        opacity: 0
-        top: -20px
-  
-
-
-@keyframes killShot 
-    0% 
-        transform: translateY(0) rotate(0deg)
-        opacity:1
-  
-    100% 
-        transform: translateY(300px) rotate(45deg)
-        opacity:0
-  
-
-
-
-@keyframes slowFade 
-    0% 
-        background: rgba(248, 248, 248, 0.754)
-  
-    100% 
-        background: rgba(248, 248, 248, 0.286)
-        
-        
-
-
-@keyframes fadeIn 
-    0% 
-        background: rgba(0,0,0,.0)
-    
-    100% 
-        background: rgba(0, 0, 0, 0.2)
-  
- 
-@keyframes bondJamesBond 
-  0% 
-    transform: translateX(1000px)
-
-  80% 
-    transform: translateX(0px)
-    border-radius: 100px
-    height: 35px
-    width: 255px
-
-  90% 
-    border-radius: 50px
-    height: 182px
-    width: 247px
-
-  100% 
-    border-radius: 10px
-    height: 362px
-    width: 300px
-   
-
-@keyframes descendre 
-  0%
-    transform: translateY(0)
-    opacity: 0
-  
-  100%
-    transform: translateY(80px)
-    opacity: 1
-  
-
-.close
-    overflow: hidden
-    position: absolute
-    border: none
-    padding: 0
-    left: 228px
-    top: -55px
-    width: 3em 
-    height: 3em
-    border-radius: 50%
-    background: white
-    color: #1da1f2
-    font: inherit
-    text-indent: 100%
-    cursor: pointer
-    transition: all 0.8s
-    
-
-    &:focus
-        outline: solid 0 transparent
-        box-shadow: 0 0 0 2px #8ed0f9
-
-    &:hover
-        background: rgba(29, 161, 142, .1)
-
-    &:before, &:after
-        position: absolute
-        top: 15% 
-        left: calc(50% - .0625em)
-        width: .125em 
-        height: 70%
-        border-radius: .125em
-        transform: rotate(45deg)
-        background: currentcolor
-        content: ''
-
-    &:after  
-        transform: rotate(-45deg)
-
-.polaroid-text
-    width: 250px
-    height: 140px
-    margin-top: 160px
-    transition-property: font-size
-    transition-duration: 1s
-    transition-delay: 0.3s
-    @media screen and (min-width: $desktop-screen) 
-        width: 500px
-        height: 280px
-        margin-top: 320px
-
-.description
-    margin-top: -60px
-    z-index: 12
-
-.description p
-    
-    margin-left: 30px
-    margin-top: 40px
-    margin-right: 12.5px
-    @media screen and (min-width: $desktop-screen) 
-        margin-left: 300px
-        margin-top: 80px
-        margin-right: 25px
-
-.description H3
-    margin-left: 30px
-    margin-top: 5px
-    margin-right: 12.5px
-    @media screen and (min-width: $desktop-screen) 
-        margin-left: 300px
-        margin-top: 30px
-        margin-right: 25px
-
-.description H4
-    margin-left: 30px
-    margin-top: 5px
-    margin-right: 12.5px
-    @media screen and (min-width: $desktop-screen) 
-        margin-left: 300px
-        margin-top: 10px
-        margin-right: 25px
-
-
-
-#paper-clip
-    width: 30px
-    position: absolute
-    top: -50px
-    margin-left: 142.5px
-    z-index: 16
-    overflow: visible
-    @media screen and (min-width: $desktop-screen) 
-        width: 60px
-        position: absolute
-        top: -25px
-        margin-left: 295px
-
-    &-shadow
-        width: 30px
-        position: absolute
-        top: -50px
-        margin-left: 142.5px
-        z-index: 13
-        overflow: visible
-        rotate: 6deg
-        @media screen and (min-width: $desktop-screen) 
-            width: 60px
-            position: absolute
-            top: -25px
-            margin-left: 295px
-
-.description a
-    margin-top: 305px
-    margin-left: 55px
-    background-color: rgba(240, 248, 255, 0)
-    padding: 1rem
-    border-radius: 10%
-    font-size: 22px
-    border: 1px
-    @media screen and (min-width: $desktop-screen) 
-        margin-top: 310px
-        margin-left: 330px
-
-
-.icons
-    width: 50px
-    @media screen and (min-width: $desktop-screen) 
-        width: 70px
-
-/* -----------FIRST PROJECT DOCUMENT------------- */
-
-.first
-    margin-left: -96px
-    @media screen and (min-width: $desktop-screen) 
-        margin-left: -190px
-
-.document-base
-    clip-path: polygon(39% 4%, 39% 6%, 39% 10%, 39% 14%, 39% 19%, 40% 22%, 41% 25%, 42% 27%, 44% 27%, 47% 27%, 51% 26%, 53% 26%, 56% 26%, 55% 24%, 54% 20%, 54% 16%, 54% 11%, 55% 7%, 55% 4%, 50% 4%, 46% 4%, 42% 4%)
-    transition: clip-path 0.5s ease-in-out
-    background-color: rgb(249, 244, 239)
-    position: absolute
-    margin-top: 55px
-    margin-left: 57.5px
-    width: 150px
-    height: 150px
-    rotate: -8deg
-    z-index: 3
-    
-    @media screen and (min-width: $desktop-screen) 
-        margin-top: 110px
-        margin-left: 115px
-        width: 300px
-        height: 300px
-
-    &-expanded
-        // clip-path: polygon(0 0, 1% 0, 2% 0, 3% 0, 4% 0, 5% 0, 6% 0, 7% 0, 8% 0, 9% 0, 10% 0, 11% 0, 12% 0, 13% 0, 14% 0, 15% 0, 16% 0, 17% 0, 18% 0, 100% 0, 100% 50%, 0 50%)
-        // background-color: rgb(239, 236, 232)
-        // position: absolute
-        // margin-top: -100px
-        // margin-left: 84px
-        // width: 400px
-        // height: 900px
-        // rotate: 0deg
-        // z-index: 13
-        // transition: all 0.5s ease-in-out
-        // border: solid black
-        // border-color: black
-        // border-width: 3px 4px 3px 5px
-        // border-radius:55% 4% 92% 5%/4% 95% 6% 95%
-        // transform: rotate(1deg)
-        @media screen and (min-width: $desktop-screen) 
-        border: none
-        margin-top: 0px
-        margin-left: 145px
-        width: 1000px
-        height: 1000px
-
 #modal-container 
     position: fixed
     display: table
@@ -331,30 +70,28 @@ $color-alpha: #b78846
                     animation: descendre 1.5s ease forwards
                     animation-delay: 1.8s
                     @media screen and (min-width: $desktop-screen) 
-                        margin-top: 110px
-                        margin-left: 5px
+                        flex-direction: column
+                        margin-top: -450px
+                        margin-left: 315px
                 
                 .link
-                    margin-bottom: 13px
-                    margin-left: 60px
-                    margin-right: 10px
-                    background-color: rgb(240, 243, 245)
-                    padding: 23px
+                    width: 103%
+                    height: 50px
+                    background-color: red
                     border-radius: 20%
-                    z-index: 11
-                    opacity: 0
-                    position: absolute
-                    animation: descendre 0.2s ease forwards
-                    animation-delay: 4s
+                    position: relative
+                    display: block
                     @media screen and (min-width: $desktop-screen) 
-                        margin-top: 110px
-                        margin-left: 5px
+                        margin-top: 0px
+                        margin-left: -20px
 
                 
                 .description 
                     opacity:0
                     position: relative
                     animation: modalContentFadeIn .5s 1.4s linear forwards
+                    font-family: "Poppins", sans-serif
+                    
 
                     .imgContainer
                         -webkit-border-radius: 200px
@@ -362,15 +99,21 @@ $color-alpha: #b78846
                         z-index: -10
                         -moz-border-radius: 200px
                         border-radius: 200px
+                        border: 8px #ffcc67 solid 
                         width: 170px
                         height: 170px
-                        right: 34px
-                        top: -91px
+                        right: 28px
+                        top: -95px
                         overflow: hidden
-                        box-shadow: inset 0 0 30px 5px rgba(0, 0, 0, 0.5)
+                        background-color: white
 
                         .imgProject
-                            height: 170px
+                            margin: 6px
+                            -moz-border-radius: 200px
+                            border-radius: 200px
+                            height: 158px
+                            width: 158px
+                            
 
                     .projectType
                         margin-top: 15px
@@ -381,10 +124,12 @@ $color-alpha: #b78846
                         width: 105px
 
                     .projectTitle
-                        margin-top: 55px
+                        margin-top: 65px
                     
                     p
-                        content: "coucoucoucoucou"
+                        font-weight: 300
+                        line-height: 1.5
+                        font-size: 16px
                         
                         
         
@@ -412,209 +157,11 @@ $color-alpha: #b78846
       font-weight: 300
       position: relative
 
-
-
-.document-corner
-    clip-path: polygon(29% 17%, 32% 28%, 35% 26%)
-    background-color: rgb(195, 187, 177)
-    width: 150px
-    height: 150px
-    position: absolute
-    margin-top: 55px
-    margin-left: 68px
-    rotate: -3deg
-    z-index: 4
-    animation-name: paper
-    animation-iteration-count: infinite
-    animation-duration: 6s
+.icons
+    width: 50px
     @media screen and (min-width: $desktop-screen) 
-        width: 300px
-        height: 300px
-        position: absolute
-        margin-top: 110px
-        margin-left: 136px
-
-    
-
-#documentFirst
-    transition: all 0.3s ease
-
-#project-1
-    margin-top: 45px
-    margin-left: 120px
-    @media screen and (min-width: $desktop-screen) 
-        margin-top: 90px
-        margin-left: 240px
-
-#firstThumbBottom
-    margin-left: 105px
-    margin-top: 70px
-    @media screen and (min-width: $desktop-screen) 
-        margin-left: 210px
-        margin-top: 140px
-
-#firstThumbTop
-    margin-left: 124px
-    margin-top: 54px
-    @media screen and (min-width: $desktop-screen) 
-        margin-left: 248px
-        margin-top: 108px
-
-    & .thumbtack-front
-        background-color: blue
-
-    & .thumbtack-back
-        background-color: blue
-
-/* ----------------SECOND DOCUMENT PROJECT--------------- */
-
-    
-.second
-    margin-left: -56px
-    margin-top: 6px 
-    @media screen and (min-width: $desktop-screen) 
-        margin-left: -120px
-        margin-top: 7px
-
-
-.documentSecond-base
-    clip-path: polygon(31% 29%, 35% 29%, 40% 29%, 44% 29%, 47% 29%, 46% 34%, 46% 37%, 46% 38%, 48% 41%, 49% 43%, 45% 43%, 40% 43%, 38% 43%, 34% 43%, 32% 40%, 31% 35%, 31% 31%)
-    background-color: rgb(230, 205, 43)
-    width: 100px
-    height: 100px
-    position: absolute
-    margin-top: 60px
-    margin-left: 95px
-    rotate: -28deg
-    z-index: 7
-    @media screen and (min-width: $desktop-screen) 
-        width: 200px
-        height: 200px
-        position: absolute
-        margin-top: 120px
-        margin-left: 190px
-
-.documentSecond-text
-    rotate: -5deg
-    margin-top: 32.5px
-    margin-left: -90px
-    gap: -400px
-    @media screen and (min-width: $desktop-screen) 
-        margin-top: 65px
-        margin-left: -45px
-        gap: -200px
-
-    & p
-        font-size: 3px
-
-#project-2
-    margin-top: 80px
-    margin-left: 115px
-    @media screen and (min-width: $desktop-screen) 
-        margin-top: 160px
-        margin-left: 230px
-
-/* ----------------THIRD DOCUMENT PROJECT--------------- */
-
-.documentThird-base
-    clip-path: polygon(26% 67%, 26% 61%, 26% 57%, 29% 58%, 33% 58%, 38% 58%, 42% 58%, 46% 57%, 50% 56%, 50% 61%, 50% 66%, 51% 70%, 48% 69%, 45% 68%, 44% 69%, 42% 71%, 40% 72%, 39% 71%, 37% 70%, 35% 69%, 34% 70%, 34% 71%, 33% 72%, 33% 75%, 31% 75%, 29% 73%, 29% 72%, 26% 74%) 
-    background-color: rgb(234, 232, 228)
-    width: 115px
-    height: 75px
-    position: absolute
-    margin-top: 0px
-    margin-left: 35px
-    rotate: -13deg
-    z-index: 5
-    @media screen and (min-width: $desktop-screen) 
-        width: 230px
-        height: 150px
-        position: absolute
-        margin-top: 0px
-        margin-left: 70px
-
-.documentThird-text
-    width: 80px
-    height: 2.5px
-    margin-top: 46px
-    margin-left: 31.5px
-    gap: -400px
-    @media screen and (min-width: $desktop-screen) 
-        width: 160px
-        height: 5px
-        margin-top: 92px
-        margin-left: 63px
-        gap: -200px
-
-    & p
-        font-size: 3px
-
-#project-3
-    margin-top: 32.5px
-    margin-left: 85px
-    @media screen and (min-width: $desktop-screen) 
-        margin-top: 65px
-        margin-left: 170px
-
-/*----------POLAROID----------*/
-
-.polaroid
-    background-color: aliceblue
-    width: 25px
-    height: 25px
-    position: absolute
-    z-index: 6
-    transition: all 0.3s ease
-    clip-path: polygon(0 28%, 56% 8%, 55% 79%, 0% 100%)
-    cursor: pointer
-    @media screen and (min-width: $desktop-screen) 
-        width: 50px
-        height: 50px
-
-    &-expanded
-        background-color: aliceblue
-        width: 150px
-        height: 200px
-        margin-top: 280px
-        margin-left: 80px
-        position: absolute
-        z-index: 13
-        cursor: default
-        transition: all 0.3s ease
-        box-shadow: rgba(0, 0, 0, 0.3) 0px 1.9px 3.8px, rgba(0, 0, 0, 0.22) 0px 1.5px 1.2px
-        @media screen and (min-width: $desktop-screen) 
-            width: 300px
-            height: 400px
-            margin-top: -120px
-            margin-left: 130px
-
-.photo
-    background-color: rgb(33, 34, 35)
-    width: 26px
-    height: 26px
-    margin-top: 1px
-    margin-left: 1px
-    position: absolute
-    z-index: 7
-    transition: all 0.1s ease
-    clip-path: polygon(0 28%, 47% 12%, 46% 60%, 0 77%)
-    @media screen and (min-width: $desktop-screen) 
-        width: 52px
-        height: 52px
-        margin-top: 2px
-        margin-left: 2px
-
-    &-expanded
-        background-color: rgb(33, 34, 35)
-        width: 135px
-        height: 135px
-        margin-top: 10px
-        margin-left: 7px
-        position: absolute
-        z-index: 7
-        transition: all 0.3s ease
-        @media screen and (min-width: $desktop-screen) 
-            width: 270px
-            height: 270px
-            margin-top: 20px
-            margin-left: 14px
+        width: 60px
+        height: 60px
+        background-color: white
+        border-radius: 50%
+        padding: 5px

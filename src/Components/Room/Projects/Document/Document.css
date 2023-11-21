@@ -148,14 +148,13 @@
 @media screen and (min-width: 768px) {
   .description p {
     margin-left: 15px;
-    margin-top: 80px;
     margin-right: 25px;
   }
 }
 
 .description H3 {
   margin-left: 30px;
-  margin-top: 5px;
+  margin-top: 10px;
   margin-right: 12.5px;
 }
 @media screen and (min-width: 768px) {
@@ -229,19 +228,6 @@
   }
 }
 
-.icons {
-  width: 50px;
-}
-@media screen and (min-width: 768px) {
-  .icons {
-    width: 60px;
-    height: 60px;
-    background-color: white;
-    border-radius: 50%;
-    padding: 5px;
-  }
-}
-
 /* -----------FIRST PROJECT DOCUMENT------------- */
 .first {
   margin-left: -96px;
@@ -282,157 +268,6 @@
   width: 1000px;
   height: 1000px;
 }
-#modal-container {
-  position: fixed;
-  display: table;
-  height: 100%;
-  width: 100%;
-  top: -50px;
-  left: 0;
-  transform: scale(0);
-  z-index: 1;
-}
-#modal-container.firstModal {
-  transform: scale(1);
-  z-index: 999;
-}
-#modal-container.firstModal .modal-background {
-  background: rgba(0, 0, 0, 0);
-  animation: fadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-}
-#modal-container.firstModal .modal-background .modal {
-  position: relative;
-  margin-top: 150px;
-  z-index: 999;
-  height: 65px;
-  width: 105px;
-  border-radius: 100px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  animation: bondJamesBond 1.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-  padding-top: 50px;
-}
-#modal-container.firstModal .modal-background .modal:after, #modal-container.firstModal .modal-background .modal:before {
-  background: #fff;
-  content: "";
-  transform: translateZ(-1px);
-}
-#modal-container.firstModal .modal-background .modal:after {
-  -webkit-border-radius: 100px;
-  position: absolute;
-  z-index: -10;
-  border-radius: 100px;
-  height: 100px;
-  left: 43px;
-  top: -50px;
-  width: 100px;
-}
-#modal-container.firstModal .modal-background .modal:before {
-  -webkit-border-radius: 200px;
-  position: absolute;
-  z-index: -10;
-  border-radius: 200px;
-  width: 180px;
-  height: 180px;
-  right: 50px;
-  top: -90px;
-}
-#modal-container.firstModal .modal-background .modal .technos {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 13px;
-  margin-left: -20px;
-  background-color: rgba(240, 243, 245, 0);
-  padding: 1rem;
-  border-radius: 20%;
-  z-index: 11;
-  opacity: 0;
-  position: absolute;
-  animation: descendre 1.5s ease forwards;
-  animation-delay: 1.8s;
-}
-@media screen and (min-width: 768px) {
-  #modal-container.firstModal .modal-background .modal .technos {
-    flex-direction: column;
-    margin-top: -450px;
-    margin-left: 315px;
-  }
-}
-#modal-container.firstModal .modal-background .modal .link {
-  margin-bottom: 13px;
-  margin-left: 60px;
-  margin-right: 10px;
-  background-color: rgb(240, 243, 245);
-  padding: 23px;
-  border-radius: 20%;
-  z-index: 11;
-  opacity: 0;
-  position: absolute;
-  animation: descendre 0.2s ease forwards;
-  animation-delay: 4s;
-}
-@media screen and (min-width: 768px) {
-  #modal-container.firstModal .modal-background .modal .link {
-    margin-top: 0px;
-    margin-left: 50px;
-  }
-}
-#modal-container.firstModal .modal-background .modal .description {
-  opacity: 0;
-  position: relative;
-  animation: modalContentFadeIn 0.5s 1.4s linear forwards;
-}
-#modal-container.firstModal .modal-background .modal .description .imgContainer {
-  -webkit-border-radius: 200px;
-  position: absolute;
-  z-index: -10;
-  border-radius: 200px;
-  width: 170px;
-  height: 170px;
-  right: 34px;
-  top: -91px;
-  overflow: hidden;
-  box-shadow: inset 0 0 30px 5px rgba(0, 0, 0, 0.5);
-}
-#modal-container.firstModal .modal-background .modal .description .imgContainer .imgProject {
-  height: 170px;
-}
-#modal-container.firstModal .modal-background .modal .description .projectType {
-  margin-top: 15px;
-  margin-left: -10px;
-  text-align: start;
-  font-size: 1rem;
-  overflow-wrap: break-word;
-  width: 105px;
-}
-#modal-container.firstModal .modal-background .modal .description .projectTitle {
-  margin-top: 55px;
-}
-#modal-container.out .modal-background {
-  background: rgba(255, 255, 255, 0.41);
-  animation: slowFade 0.5s linear forwards;
-}
-#modal-container.out .modal-background .modal {
-  border-radius: 3px;
-  height: 162px;
-  width: 227px;
-}
-#modal-container.out .modal-background .modal .description {
-  animation: modalContentFadeOut 0.5s 0.5 cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-}
-
-.modal-background {
-  display: table-cell;
-  background: rgba(0, 0, 0, 0.8);
-}
-.modal-background .modal {
-  background: white;
-  padding: 20px;
-  display: inline-block;
-  border-radius: 3px;
-  font-weight: 300;
-  position: relative;
-}
-
 .document-corner {
   -webkit-clip-path: polygon(29% 17%, 32% 28%, 35% 26%);
           clip-path: polygon(29% 17%, 32% 28%, 35% 26%);
@@ -453,7 +288,7 @@
     width: 300px;
     height: 290px;
     position: absolute;
-    margin-top: 110px;
+    margin-top: 111px;
     margin-left: 136px;
     rotate: -4deg;
   }
