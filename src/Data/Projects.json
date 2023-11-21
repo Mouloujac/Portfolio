@@ -3,6 +3,7 @@
     {
       "id": 1,
       "title": "Jacquotte et Fanfan",
+      "type": "Projet de fin d'études",
       "image": "Proto-site.png",
       "content": "Jacquotte et Fanfan est un projet de site vitrine et e-commerce conçu pour une couturière amatrice. Bien qu'il ne soit pas encore en ligne, il présente une plateforme destinée à exposer ses créations et à offrir des fonctionnalités d'e-commerce pour ses produits artisanaux.",
       "technos": [
@@ -16,6 +17,7 @@
     {
       "id": 2,
       "title": "Galatron",
+      "type": "Projet de stage",
       "image": "Proto-site.png",
       "content": "Galatron est un projet axé principalement sur le front-end. Il consiste à connecter un logiciel capable de capter l'oxygène dans l'espace à l'aide d'une antenne. Le développement incluait la création d'un panneau de contrôle visant à simplifier l'utilisation de cette technologie.",
       "technos": [
@@ -29,6 +31,7 @@
     {
       "id": 3,
       "title": "PixEdit",
+      "type": "Projet personnel",
       "image": "Proto-site.png",
       "content": "PixEdit est un outil polyvalent permettant de recadrer, redimensionner et appliquer des filtres artistiques à des images. Il offre la possibilité de convertir des images en noir et blanc ou en sépia, tout en donnant la possibilité de les télécharger après édition.",
       "technos": [

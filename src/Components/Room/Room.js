@@ -59,6 +59,12 @@ function Room() {
       <img src='/cat.svg' className='cat'></img>
       <Carpet />
       <div id="ground-shadow"></div>
+      <img id="roomCloud" src="roomCloud.svg"></img>
+      <div id="roomCloud1"></div>
+      <div id="roomCloud11"></div>
+      <div id="roomCloud2"></div>
+      <div id="roomCloud22"></div>
+      <div id="roomCloud3"></div>
     </div>
   );
 }

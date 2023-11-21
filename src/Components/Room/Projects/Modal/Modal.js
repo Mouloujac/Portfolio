@@ -8,6 +8,7 @@ function Modal(props) {
   const [technos, setTechnos] = useState([]);
   const [lien, setLien] = useState(null);
   const [image, setImage] = useState(null);
+  const [type, setType] = useState(null);
 
   useEffect(() => {
     if (props.selectedProject) {
@@ -16,6 +17,7 @@ function Modal(props) {
       setTechnos(props.selectedProject.technos);
       setLien(props.selectedProject.lien);
       setImage(props.selectedProject.image);
+      setType(props.selectedProject.type);
     }
   }, [props.selectedProject]);
 
@@ -30,12 +32,12 @@ function Modal(props) {
                       <img src={`${image}`} className="imgProject" alt="icons"></img>
                     
                     </div>
-                    <h2 className="projectType">Projet de fin d'études..</h2>
+                    <h2 className="projectType">{type}</h2>
                     <h2 className="projectTitle">{title}</h2>
                     <p>{content}</p>
                     {lien && (
                       <a className="link" href={lien} target="_blank" rel="noopener noreferrer">
-                        Lien Github
+                        <span>Lien Github</span>
                       </a>
                     )}
                 </div>

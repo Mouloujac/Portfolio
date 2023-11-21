@@ -69,22 +69,36 @@
 @media screen and (min-width: 768px) {
   #modal-container.firstModal .modal-background .modal .technos {
     flex-direction: column;
-    margin-top: -450px;
+    margin-top: -490px;
     margin-left: 315px;
   }
 }
 #modal-container.firstModal .modal-background .modal .link {
-  width: 103%;
+  width: 113.5%;
   height: 50px;
+  margin-left: -20px;
+  margin-bottom: 0px;
   background-color: red;
-  border-radius: 20%;
+  box-sizing: border-box;
   position: relative;
   display: block;
+  border-radius: 0 0 10px 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: rgb(255, 149, 87);
+  color: rgb(255, 250, 246);
+  font-weight: 700;
+  font-size: 16px;
+  font-line-height: 1;
+  font-family: Poppins, sans-serif;
 }
 @media screen and (min-width: 768px) {
   #modal-container.firstModal .modal-background .modal .link {
     margin-top: 0px;
-    margin-left: -20px;
   }
 }
 #modal-container.firstModal .modal-background .modal .description {
@@ -92,6 +106,10 @@
   position: relative;
   animation: modalContentFadeIn 0.5s 1.4s linear forwards;
   font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  font-size: 16px;
+  text-align: center;
 }
 #modal-container.firstModal .modal-background .modal .description .imgContainer {
   -webkit-border-radius: 200px;
@@ -122,6 +140,9 @@
 }
 #modal-container.firstModal .modal-background .modal .description .projectTitle {
   margin-top: 65px;
+  font-weight: 900;
+  line-height: 1.5;
+  font-size: 24px;
 }
 #modal-container.firstModal .modal-background .modal .description p {
   font-weight: 300;
@@ -156,6 +177,7 @@
 
 .icons {
   width: 50px;
+  border: 5px #ffcc67 solid;
 }
 @media screen and (min-width: 768px) {
   .icons {
