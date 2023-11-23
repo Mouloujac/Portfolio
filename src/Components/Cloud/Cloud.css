@@ -5,7 +5,7 @@
   position: fixed;
   right: 0;
   top: 0;
-  z-index: -1;
+  z-index: -2;
 }
 
 /* KEYFRAMES */
@@ -51,14 +51,14 @@
   animation: animateCloud 25s linear infinite;
   margin-top: 200px;
   transform: scale(1.45);
-  z-index: 999;
+  z-index: -2;
 }
 
 .x6 {
   animation: animateCloud 25s linear infinite;
   margin-top: 200px;
   transform: scale(1.45);
-  z-index: 999;
+  z-index: -2;
 }
 
 /* OBJECTS */

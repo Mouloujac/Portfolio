@@ -3,6 +3,17 @@ $dash-size: 5px
 $theme-color: mediumseagreen
 $color-alpha: #b78846
 
+
+@keyframes fadeOpacity 
+  0% 
+    opacity: 0
+  
+  100% 
+    opacity: 1
+  
+
+
+
 #modal-container 
     position: fixed
     display: table
@@ -60,28 +71,30 @@ $color-alpha: #b78846
                     display: flex
                     gap: 1rem
                     margin-bottom: 13px
-                    margin-left: -20px
                     background-color: rgba(240, 243, 245, 0)
-                    padding: 1rem
                     border-radius: 20%
                     z-index: 11
                     opacity: 0
                     position: absolute
+
                     animation: descendre 1.5s ease forwards
                     animation-delay: 1.8s
                     @media screen and (min-width: $desktop-screen) 
                         flex-direction: column
                         margin-top: -490px
                         margin-left: 315px
+                        padding: 1rem
                 
                 .link
-                    width: 113.5%
+                    width: 100%
                     height: 50px
                     margin-left: -20px
                     margin-bottom: 0px
                     background-color: red
                     box-sizing: border-box
-                    position: relative
+                    position: absolute
+                    bottom: 0
+                    opacity: 0
                     display: block
                     border-radius: 0  0  10px 10px
                     text-align: center
@@ -97,6 +110,11 @@ $color-alpha: #b78846
                         size: 16px
                         line-height: 1
                         family: Poppins, sans-serif
+                    animation-name: fadeOpacity
+                    animation-delay: 1.5s
+                    animation-duration: 0.5s
+                    animation-timing-function: ease-in
+                    animation-fill-mode: forwards
                     @media screen and (min-width: $desktop-screen) 
                         margin-top: 0px
                         
@@ -182,9 +200,10 @@ $color-alpha: #b78846
 .icons
     width: 50px
     border: 5px #ffcc67 solid
+    background-color: white
+    border-radius: 50%
+    padding: 5px
     @media screen and (min-width: $desktop-screen) 
         width: 60px
         height: 60px
-        background-color: white
-        border-radius: 50%
-        padding: 5px
+        
