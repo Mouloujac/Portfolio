@@ -26,6 +26,7 @@ function Modal(props) {
       <div id="modal-container"  className={`${props.isExpanded ? 'firstModal' : 'out'}`}>
         <div className="modal-background">
             <div className="modal" onClick={props.onClick}>
+              <div className={`${props.isExpanded ? 'modal-sun' : ''}`}></div>
                 <div className="description">
                     <div className="imgContainer">  
                     
@@ -47,7 +48,6 @@ function Modal(props) {
                       <img key={index} className="icons" src={`./${techno}.svg`} alt="icons"></img>
                     ))}
                 </div>
-                
             </div>
         </div>    
       </div>

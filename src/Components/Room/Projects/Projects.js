@@ -2,7 +2,7 @@ import React from "react";
 import "./Projects.css";
 import { useState } from "react";
 
-import Modal from "./Modal/Modal";
+import Modal from "../../Modal/Modal";
 import Data from "../../../Data/Projects.json"
 import Document from "./Document/Document";
 import DocumentSecond from "./Document/DocumentSecond";
